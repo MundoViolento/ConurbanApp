@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConurbanApp</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://kit.fontawesome.com/6f349d0ef8.js" crossorigin="anonymous"></script>
+
+    <script src="js/nav.js" defer=""></script>
+
+</head>
+<body>
+    <header>
+        <div class="navigation-nav">
+            <a href=""><img src="img/logo.jpeg" class="logo" alt="Logo de la página"></a>
+
+            <button class="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false">
+                <span class="sr-only">Menu Principal</span>
+            </button>
+
+            <nav class="container">
+                <ul id="navigation" data-visible="false" class="ul-nav">
+                    <li class="list-nav"><a class="nav" href="index.html">Inicio</a></li>
+                    <li class="list-nav"><a class="nav" href="">Mapa</a></li>
+                    <li class="list-nav"><a class="nav" href="">Barrios</a></li>
+                    <li class="list-nav"><a class="nav" href="">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    
+        <label id="barra-de-busqueda">
+            <input id="busqueda" name="busqueda" type="text" placeholder="Buscá la ubicación donde queres ir">
+            <button id="btn-buscar" name="buscar" aria-label="buscar contenido"><i id="size-btn" class="fa-solid fa-magnifying-glass"></i></button>
+        </label>
+
+        <section id="zonas">
+
+            <div class="contenedor-zonas">
+
+                <article id="conurbano" class="zona-particular">
+                    <img src="img/zonas.png" alt="">
+                    <h1>Conurbano</h1>
+                </article>
+
+                <article id="zona-norte" class="zona-particular">
+                    <img src="img/zona-norte.png" alt="">
+                    <h1>Zona Norte</h1>
+                </article>
+
+                <article id="zona-sur" class="zona-particular">
+                    <img src="img/zona-sur.png" alt="">
+                    <h1>Zona Sur</h1>
+                </article>
+
+                <article id="zona-oeste" class="zona-particular">
+                    <img src="img/zona-oeste.png" alt="">
+                    <h1>Zona Oeste</h1>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer >
+        <section class="foot_sup">
+            <div class="logo-foot"><img src="img/logo.jpeg" alt=" "width="70" height="60"></div><span>ConurbanApp</span>
+
+            <div class=" redes">    
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
+
+                <div> 
+                    <a href="https://www.youtube.com/"target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+
+            </div>
+
+            </section>
+            
+        <section class="foot_inf">
+            <ul>
+                <p> <b> INSTITUCION</b></p>
+                <li><a href="">Quienes somos</a></li>
+                <li><a href="j">Politicas de privacidad</a></li>
+                <li><a href="j">Terminos y Condiciones</a></li>
+                
+            </ul>
+
+            <ul>
+                <p><b>AYUDA</b></p>
+                <li><a href="j">preguntas frecuentes</a></li>
+                <li><a href="j">como funciona</a></li>
+                <li><a href="j">Terminos y Condiciones</a></li>
+                
+            </ul>
+            <ul>
+                <p><b>CENTRO DE ATENCION AL CLIENTE</b> </p>
+                <li>conurban@gmail.com</li>
+                <li>0800-565-4785</li>
+                <li><a href="https://wa.me/541166082991?text=dsadada">WhatsApp</a></li>
+            </ul>
+        </section>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
