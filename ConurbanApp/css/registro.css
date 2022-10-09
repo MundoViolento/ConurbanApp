@@ -1,0 +1,186 @@
+main{
+    display: flex;
+ justify-content: center;
+}
+.navigation-nav {
+    width: var(--contenedor);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 15px;
+}
+.logo {
+    width: auto;
+    height: 70px;
+    margin-left: 15px;
+    order: 3;
+    
+    transition: all 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+/* Elementos de NavBar */
+
+.ul-nav {
+    padding: 0;
+    list-style: none;
+}
+
+.list-nav {
+    display: inline-block;
+    padding: 0 30px;
+    transition: all 0.3s;
+}
+
+.list-nav:hover {
+    transform: scale(1.1);
+}
+
+/* Enlaces */
+
+a.nav:link, a.nav:visited {
+    padding: 10px;
+
+    font-size: 1.1em;
+    font-family: 'Courier New', Courier, monospace;
+
+    color: rgb(2, 2, 2);
+}
+
+a.nav:hover {
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+
+/* sr-only hace referencia al menu principal que va a aparecer en pantalla para movil en forma de boton, esta clase es para no visualizar eso*/
+.sr-only {
+    position: absolute;
+    left: -4000px;
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+/* Sacamos el boton de navegación movil */
+.mobile-nav-toggle {
+    display: none;
+}
+/*--------------------------------registro------------------------------------------------------------*/
+.main_registro{
+   
+    
+    background-image: url(../img/fondo_registro.jpg);
+    border: solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    height: 700px;
+ 
+}
+.cuadro_registro{
+  
+   background-image: url(../img/fondo-blanco.png);
+   background-position: center;
+   background-size:contain;
+   padding: 0;
+   width: 50%;
+   height: 80%;
+   margin-top: 50px;
+   
+}
+
+
+input{
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin-bottom: 25px;
+   
+}
+.caja{
+    display: inline;
+    width: 15px;
+   align-items: center;
+}
+.registro_inferior_boton{
+    display: flex;
+    justify-content: center;
+
+}
+.confirmar{
+    width: 300px;
+    color: blue;
+    font-weight:bold;
+ border-radius: 30px;
+}
+
+.registroSuperior{
+    display: flex;
+    justify-content: space-evenly;
+}
+/**---------------------------------------foter----------------------*/
+footer{
+
+    border-top:double  red;
+    background-color: rgb(184, 181, 181);
+    display: block;
+    margin: 0;
+}
+ 
+footer ul,a,li {
+    margin-bottom: 5px;
+    text-align: center;
+ 
+    list-style: none;
+ 
+    color: black;
+}
+ 
+footer p{
+    border-bottom: solid black;
+}
+ 
+.foot_sup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ 
+    font-size: 50px;
+}
+ 
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+ 
+.redes div{
+    margin: 15px;
+}
+ 
+ion-icon {
+    width: 30px;
+    height: 50px;
+    
+    color: rgb(26, 26, 29);
+}
+ 
+.foot_inf {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-foot {
+  
+    border-radius: 50% ;
+    width: 70px;
+    height: 60px;
+    overflow:hidden;
+}
