@@ -1,0 +1,85 @@
+*{
+    font-size: 30px;
+}
+body{
+    padding-top: 150px;
+}
+
+
+/* ESTILOS GENERALES */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 150px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* PARTE IZQUIERDA (logo y nombre de la app) */
+.logo{
+    padding: 0px 100px;
+}
+
+.logo img{
+    width: auto;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+/* PARTE DERECHA (buscador, ítems, log in) */
+.parteDerechaNavbar{
+    display: flex;
+    padding-right: 100px;
+}
+
+/* BUSCADOR */
+.buscadorNav{
+    background-color: white;
+    border: 1px solid rgba(157, 157, 157, 0.466);
+    border-radius: 30px;
+
+    width: 25vw;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.inputBuscador{
+    width: 25vw;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.inputBuscador:focus{
+    border: none;
+}
+
+
+.login{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 15px;
+
+    text-decoration: none;
+}
+
+.login:hover{
+    color: rgb(211, 195, 175);
+}
+
+
+/* ...................MEDIA................. */
+@media (max-width: 768px){
+    
+}
