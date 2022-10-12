@@ -2,8 +2,6 @@
 /* Estilos generales */
 
 :root {
-    --contenedor: min(1250px, 100%);
-
     --color-blanco-alpha: rgba(255, 255, 255, 0.74);
     --color-background-img: white
 } 
@@ -33,7 +31,7 @@ header {
 }
 
 .navigation-nav {
-    width: var(--contenedor);
+    width: 1250px;
 
     display: flex;
     justify-content: space-between;
