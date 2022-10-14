@@ -15,20 +15,26 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <!-- LOGO: IMG + "ConurbanApp" -->
                 <div class="logo">
                     <a class="navbar-brand" href="../ConurbanApp/index.html"><img src="../ConurbanApp/img/logo.jpeg" alt="">ConurbanApp</a>
                 </div>
+
+                    <!-- BUSCADOR -->
+                <form class="buscadorNav d-flex">
+                    <input class="inputBuscador" type="search" placeholder="¿Qué buscamos?" aria-label="Search">
+                    <button class="btn" type="submit"><ion-icon name="search-outline"></ion-icon></button>
+                </form>
+
+                <!-- BOTON COLLAPSE  -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="parteDerechaNavbar">
-                    <!-- BUSCADOR -->
-                    <form class="buscadorNav d-flex">
-                        <input class="inputBuscador" type="search" placeholder="¿Qué buscamos?" aria-label="Search">
-                        <button class="btn" type="submit"><ion-icon name="search-outline"></ion-icon></button>
-                    </form>
-                
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <!-- ITEMS DEL NAV -->
                         <ul class="menuDesplegable navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Barrios</a>
@@ -36,8 +42,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Mapa</a>
                             </li>
+                            
                             <!-- Log In -->
-                            <li class="nav-item">
+                            <li class="contenedorLogin nav-item">
                                 <a class="login nav-item" aria-current="page" href="../ConurbanApp/inicioSesion.html">Iniciar seción</a>
                             </li>
                         </ul>

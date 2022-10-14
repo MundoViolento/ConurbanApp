@@ -18,19 +18,18 @@ body{
     justify-content: space-between;
     
 }
-/* PARTE IZQUIERDA (logo y nombre de la app) */
+/* ...................PARTE IZQUIERDA (logo y nombre de la app) */
 .logo{
-    padding: 0px 100px;
+    padding: 0px 105px;
 }
 
 .logo img{
     width: auto;
     height: 150px;
-    object-fit: contain;
 }
 
 
-/* PARTE DERECHA (buscador, ítems, log in) */
+/* ...................PARTE DERECHA (buscador, ítems, log in) */
 .parteDerechaNavbar{
     display: flex;
     padding-right: 100px;
@@ -42,9 +41,7 @@ body{
     border: 1px solid rgba(157, 157, 157, 0.466);
     border-radius: 30px;
 
-    width: 25vw;
     justify-content: flex-end;
-    margin-right: 20px;
 }
 
 .inputBuscador{
@@ -58,6 +55,10 @@ body{
     border: none;
 }
 
+/* LOG IN */
+.contenedorLogin{
+    align-self: center;
+}
 
 .login{
     color: white;
@@ -72,6 +73,7 @@ body{
     border-radius: 15px;
 
     text-decoration: none;
+    font-size: 25px;
 }
 
 .login:hover{
@@ -79,7 +81,70 @@ body{
 }
 
 
-/* ...................MEDIA................. */
-@media (max-width: 768px){
-    
+/* ...................MEDIAS................. */
+
+/* Los ítems se ajustan al nav */
+@media (max-width: 1657px){
+    .logo{
+        padding-right: 13px;
+        padding-left: 50px;
+    }
+
+    .inputBuscador{
+        text-align: end;
+        padding: 0 50px;
+    }
+
+    .parteDerechaNavbar{
+        padding-right: 20px;
+    }
+}
+
+/* Desaparece el buscador */
+@media (max-width: 1524px){
+    .buscadorNav{
+        display: none !important;
+    }
+}
+
+/* Aparece el botón */
+@media (max-width: 991px) {
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        padding-left: 50px;
+    }
+
+    .navbar-toggler{
+        flex-direction: column;
+        margin-right: 50px;
+    }
+
+    .parteDerechaNavbar{
+        padding: 0;
+        background-color: rgba(29, 14, 14, 0.788);
+        width: 100%;
+    }
+
+    .parteDerechaNavbar ul{
+        align-items: center;
+    }
+
+    .parteDerechaNavbar a{
+        color: antiquewhite !important;
+    }
+}
+
+/* Desaparece el texto "ConurbanAPP" del logo */
+@media (max-width: 740px){
+    .logo{
+        padding-right: 0px;
+    }
+
+    .logo img, .logo a{
+        height: 150px;
+        font-size: 0px;
+    }
 }
