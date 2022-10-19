@@ -361,3 +361,24 @@ ion-icon {
 
 }
 /*-----------------REGISTRO --------------------------*/
+
+svg {
+    padding: 6px;
+  }
+  .abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  
+  .fondo-transparente{
+    background-image: url(../img/fondo-blanco.png);
+  
+    align-items: center;
+    justify-content: center;
+  
+  
+  }
+  
