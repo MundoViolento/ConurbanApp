@@ -14,6 +14,7 @@
 
 body {
     margin: 0;
+    padding: 0;
 
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
@@ -21,7 +22,7 @@ body {
 }
 
 /*------------------ Barra de navegación ------------------------*/
-
+/*
 header {
     box-shadow: 1px 15px 18px -5px rgba(0,0,0,0.51);
     -webkit-box-shadow: 1px 15px 18px -5px rgba(0,0,0,0.51);
@@ -40,9 +41,10 @@ header {
     margin: 0 auto;
     padding: 15px;
 }
+*/
 
 /* Imagen */
-
+/*
 .logo {
     width: auto;
     height: 70px;
@@ -55,9 +57,9 @@ header {
 .logo:hover {
     transform: scale(1.2);
 }
-
+*/
 /* Elementos de NavBar */
-
+/*
 .ul-nav {
     padding: 0;
     list-style: none;
@@ -72,9 +74,9 @@ header {
 .list-nav:hover {
     transform: scale(1.1);
 }
-
+*/
 /* Enlaces */
-
+/*
 a.nav:link, a.nav:visited {
     padding: 10px;
 
@@ -88,8 +90,9 @@ a.nav:hover {
     transition: all 0.3s;
     text-decoration: underline;
 }
-
+*/
 /* sr-only hace referencia al menu principal que va a aparecer en pantalla para movil en forma de boton, esta clase es para no visualizar eso*/
+/*
 .sr-only {
     position: absolute;
     left: -4000px;
@@ -98,12 +101,13 @@ a.nav:hover {
     width: 1px;
     overflow: hidden;
 }
-
+*/
 /* Sacamos el boton de navegación movil */
+/*
 .mobile-nav-toggle {
     display: none;
 }
-
+*/
 /* main */
 
 main {
