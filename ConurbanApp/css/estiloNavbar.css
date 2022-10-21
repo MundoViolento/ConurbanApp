@@ -1,10 +1,10 @@
-*{
-    font-size: 30px;
-}
 body{
     padding-top: 150px;
 }
 
+header {
+    font-size: 30px;
+}
 
 /* ESTILOS GENERALES */
 .navbar{

@@ -2,76 +2,7 @@ main{
     display: flex;
  justify-content: center;
 }
-.navigation-nav {
-    width: var(--contenedor);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 0 auto;
-    padding: 15px;
-}
-.logo {
-    width: auto;
-    height: 70px;
-    margin-left: 15px;
-    order: 3;
-    
-    transition: all 0.3s;
-}
-
-.logo:hover {
-    transform: scale(1.2);
-}
-
-/* Elementos de NavBar */
-
-.ul-nav {
-    padding: 0;
-    list-style: none;
-}
-
-.list-nav {
-    display: inline-block;
-    padding: 0 30px;
-    transition: all 0.3s;
-}
-
-.list-nav:hover {
-    transform: scale(1.1);
-}
-
-/* Enlaces */
-
-a.nav:link, a.nav:visited {
-    padding: 10px;
-
-    font-size: 1.1em;
-    font-family: 'Courier New', Courier, monospace;
-
-    color: rgb(2, 2, 2);
-}
-
-a.nav:hover {
-    transition: all 0.3s;
-    text-decoration: underline;
-}
-
-/* sr-only hace referencia al menu principal que va a aparecer en pantalla para movil en forma de boton, esta clase es para no visualizar eso*/
-.sr-only {
-    position: absolute;
-    left: -4000px;
-    display: block;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-
-/* Sacamos el boton de navegación movil */
-.mobile-nav-toggle {
-    display: none;
-}
 /*--------------------------------registro------------------------------------------------------------*/
 .main_registro{
    
