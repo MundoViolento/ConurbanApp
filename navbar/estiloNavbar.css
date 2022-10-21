@@ -17,6 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     
+    z-index: 100;
 }
 /* ...................PARTE IZQUIERDA (logo y nombre de la app) */
 .logo{
