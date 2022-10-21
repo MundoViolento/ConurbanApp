@@ -1,61 +1,45 @@
-
 /* Estilos generales */
-
 :root {
     --color-blanco-alpha: rgba(255, 255, 255, 0.74);
     --color-background-img: white
 } 
-
 * {
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
 }
-
 body {
     margin: 0;
     padding: 0;
-
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-
 }
 
+/* main */
 main {
     width: 100%;
-
     display: grid;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 2em;
 }
-
 /* Barra de busqueda. Hice "Id" porque vamos a usar estas clases solo en la barra principal*/
-
 #barra-de-busqueda {
     display: flex;
-
-
     margin: 5em 0 2em 0;
 }
-
 #busqueda {
     width: 70vw;
     height: 4em;
-
     justify-content: center;
     align-items: center;
-
     font-size: 1em;
     text-align: center;
     letter-spacing: 0.3em;
-
     border: 2px solid black;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
 #btn-buscar {
     width: auto;
     height: 4em;
@@ -65,16 +49,12 @@ main {
     border-right: 2px solid black;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-
     background-color: white;
 }
-
 #size-btn {
     font-size: 2.5em;
 }
-
 /*--------------------- Cuadriculas de Zonas -------------------------*/
-
 #zonas {
     width: 100%;
 
@@ -84,98 +64,69 @@ main {
     text-align: center;
     flex-direction: column;
 }
-
-
 .contenedor-zonas {
     display: grid;
- 
     width: 70vw;
     grid-gap: 2em;
-
     grid-template-columns: repeat(2, 1fr);
-
 }
-
 .zona-particular {
     background-color: var(--color-background-img);
-
     transition: all 300ms;
     border-radius: 20px;
 }
-
 .zona-particular:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
 .zona-particular > h1 {
     color: rgb(0, 0, 0);
-
     font-size: clamp(1.3em, 2.5vw, 3em);
 }
-
 .zona-particular img {
     width: 100%;
-
     border-top-left-radius: 15px;
     border-top-right-radius: 15px
 }
 
 
 @media screen and (max-width: 806px){
-
     .logo {
         width: auto;
         height: 120px;
     }
-
     .logo:hover {
         transform: none;
     }
-
     .navigation-nav {
         flex-direction: column;
     }
-
-
 }
-
 @media screen and (max-width: 690px) {
 
     .logo {
         width: auto;
         height: 150px;
     }
-
     .logo:hover {
         transform: none;
     }
-
     .contenedor-zonas {
         grid-template-columns: 1fr;
     }
-
-
 }
 /*-----------------REGISTRO --------------------------*/
-
 svg {
     padding: 6px;
-  }
-  .abs-center {
+}
+.abs-center {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-  }
-  
-  
-  .fondo-transparente{
+}
+.fondo-transparente{
     background-image: url(../img/fondo-blanco.png);
-  
     align-items: center;
     justify-content: center;
-  
-  
-  }
-  
+}
