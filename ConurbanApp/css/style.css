@@ -1,26 +1,19 @@
-
 /* Estilos generales */
-
 :root {
     --color-blanco-alpha: rgba(255, 255, 255, 0.74);
     --color-background-img: white
 } 
-
 * {
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
 }
-
 body {
     margin: 0;
     padding: 0;
-
     background-color: #21D4FD;
     background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-
 }
-
 /*------------------ Barra de navegación ------------------------*/
 /*
 header {
@@ -30,19 +23,15 @@ header {
     
     background-color: rgb(255, 255, 255);
 }
-
 .navigation-nav {
     width: 1250px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin: 0 auto;
     padding: 15px;
 }
 */
-
 /* Imagen */
 /*
 .logo {
@@ -53,7 +42,6 @@ header {
     
     transition: all 0.3s;
 }
-
 .logo:hover {
     transform: scale(1.2);
 }
@@ -64,13 +52,11 @@ header {
     padding: 0;
     list-style: none;
 }
-
 .list-nav {
     display: inline-block;
     padding: 0 30px;
     transition: all 0.3s;
 }
-
 .list-nav:hover {
     transform: scale(1.1);
 }
@@ -79,13 +65,10 @@ header {
 /*
 a.nav:link, a.nav:visited {
     padding: 10px;
-
     font-size: 1.1em;
     font-family: 'Courier New', Courier, monospace;
-
     color: rgb(2, 2, 2);
 }
-
 a.nav:hover {
     transition: all 0.3s;
     text-decoration: underline;
@@ -109,42 +92,30 @@ a.nav:hover {
 }
 */
 /* main */
-
 main {
     width: 100%;
-
     display: grid;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 2em;
 }
-
 /* Barra de busqueda. Hice "Id" porque vamos a usar estas clases solo en la barra principal*/
-
 #barra-de-busqueda {
     display: flex;
-
-
     margin: 5em 0 2em 0;
 }
-
 #busqueda {
     width: 70vw;
     height: 4em;
-
     justify-content: center;
     align-items: center;
-
     font-size: 1em;
     text-align: center;
     letter-spacing: 0.3em;
-
     border: 2px solid black;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
 #btn-buscar {
     width: auto;
     height: 4.8em;
@@ -154,187 +125,132 @@ main {
     border-right: 2px solid black;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-
     background-color: white;
 }
-
 #size-btn {
     font-size: 2.5em;
 }
-
 /*--------------------- Cuadriculas de Zonas -------------------------*/
-
 #zonas {
     width: var(--contenedor);
-
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
-
-
 .contenedor-zonas {
     display: grid;
- 
     width: 70vw;
     grid-gap: 2em;
-
     grid-template-columns: repeat(2, 1fr);
-
 }
-
 .zona-particular {
     background-color: var(--color-background-img);
-
     transition: all 300ms;
     border-radius: 20px;
 }
-
 .zona-particular:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
 .zona-particular > h1 {
     color: rgb(0, 0, 0);
-
     font-size: clamp(1.3em, 2.5vw, 3em);
 }
-
 .zona-particular img {
     width: 100%;
-
     border-top-left-radius: 15px;
     border-top-right-radius: 15px
 }
-
 /* Footer */
-
-
-
 footer{
-
     border-top:double  red;
     background-color: rgb(184, 181, 181);
     display: block;
 }
- 
 footer ul,a,li {
     margin-bottom: 5px;
     text-align: center;
- 
     list-style: none;
- 
     color: black;
 }
- 
 footer p{
     border-bottom: solid black;
 }
- 
 .foot_sup {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
- 
     font-size: 50px;
 }
- 
 .redes{
     display: flex;
     flex-direction: row;
 }
- 
 .redes div{
     margin: 15px;
 }
- 
 ion-icon {
     width: 30px;
     height: 50px;
     
     color: rgb(26, 26, 29);
 }
- 
 .foot_inf {
     display: flex;
     justify-content: space-around;
 }
-
 .logo-foot {
-  
     border-radius: 50% ;
     width: 70px;
     height: 60px;
     overflow:hidden;
 }
-
-
-
 @media screen and (max-width: 806px){
-
     .logo {
         width: auto;
         height: 120px;
     }
-
     .logo:hover {
         transform: none;
     }
-
     .navigation-nav {
         flex-direction: column;
     }
-
-
 }
-
 @media screen and (max-width: 690px) {
-
-   
-
     .primary-header {
         flex-direction: row;
         gap: 0;
     }
-
     .ul-nav {
         position: fixed;
         z-index: 100;
         inset: 0 0 0 40%; /* top right bottom left*/
-
         background-color: #000000b9;
-
         margin: 0;
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
         text-align: center;
-
-
         transform: translateX(100%);
         transition: transform 300ms ease-out;
     }
-
     .ul-nav[data-visible="true"] {
         transform: translateX(0);
         transition: transform 350ms ease-in;
     }
-
     a:link {
         font-size: clamp(1.1em, 4vw, 1.6em);
     }
-
     .mobile-nav-toggle {
         display: block;
         position: absolute;
         right: 2em;
         top: 3em;
         z-index: 101;
-
         width: 2.4em;
         height: 2.4em;
         border: none;
@@ -344,45 +260,32 @@ ion-icon {
         background-size: cover;
         
     }
-
     .mobile-nav-toggle[aria-expanded="true"] {
         background-image: url('../img/menu_close.svg');
     }
-
     .logo {
         width: auto;
         height: 150px;
     }
-
     .logo:hover {
         transform: none;
     }
-
     .contenedor-zonas {
         grid-template-columns: 1fr;
     }
-
-
 }
 /*-----------------REGISTRO --------------------------*/
-
 svg {
     padding: 6px;
-  }
-  .abs-center {
+}
+.abs-center {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-  }
-  
-  
-  .fondo-transparente{
+}
+.fondo-transparente{
     background-image: url(../img/fondo-blanco.png);
-  
     align-items: center;
     justify-content: center;
-  
-  
-  }
-  
+}
