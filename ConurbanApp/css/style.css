@@ -41,7 +41,7 @@ main {
 }
 #btn-buscar {
     width: auto;
-    height: 4.8em;
+    height: 4em;
     
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -55,7 +55,8 @@ main {
 }
 /*--------------------- Cuadriculas de Zonas -------------------------*/
 #zonas {
-    width: var(--contenedor);
+    width: 100%;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,48 +145,7 @@ ion-icon {
     }
 }
 @media screen and (max-width: 690px) {
-    .primary-header {
-        flex-direction: row;
-        gap: 0;
-    }
-    .ul-nav {
-        position: fixed;
-        z-index: 100;
-        inset: 0 0 0 40%; /* top right bottom left*/
-        background-color: #000000b9;
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        text-align: center;
-        transform: translateX(100%);
-        transition: transform 300ms ease-out;
-    }
-    .ul-nav[data-visible="true"] {
-        transform: translateX(0);
-        transition: transform 350ms ease-in;
-    }
-    a:link {
-        font-size: clamp(1.1em, 4vw, 1.6em);
-    }
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        right: 2em;
-        top: 3em;
-        z-index: 101;
-        width: 2.4em;
-        height: 2.4em;
-        border: none;
-        background-color: transparent;
-        background-image: url('../img/menu_mobile.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    }
-    .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url('../img/menu_close.svg');
-    }
+
     .logo {
         width: auto;
         height: 150px;
