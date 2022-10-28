@@ -21,93 +21,11 @@ body {
 
 }
 
-/*------------------ Barra de navegación ------------------------*/
-/*
-header {
-    box-shadow: 1px 15px 18px -5px rgba(0,0,0,0.51);
-    -webkit-box-shadow: 1px 15px 18px -5px rgba(0,0,0,0.51);
-    -moz-box-shadow: 1px 15px 18px -5px rgba(0,0,0,0.51);
-    
-    background-color: rgb(255, 255, 255);
+/* Navbar */
+.buscadorNav{
+    display: none !important;
 }
 
-.navigation-nav {
-    width: 1250px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 0 auto;
-    padding: 15px;
-}
-*/
-
-/* Imagen */
-/*
-.logo {
-    width: auto;
-    height: 70px;
-    margin-left: 15px;
-    order: 3;
-    
-    transition: all 0.3s;
-}
-
-.logo:hover {
-    transform: scale(1.2);
-}
-*/
-/* Elementos de NavBar */
-/*
-.ul-nav {
-    padding: 0;
-    list-style: none;
-}
-
-.list-nav {
-    display: inline-block;
-    padding: 0 30px;
-    transition: all 0.3s;
-}
-
-.list-nav:hover {
-    transform: scale(1.1);
-}
-*/
-/* Enlaces */
-/*
-a.nav:link, a.nav:visited {
-    padding: 10px;
-
-    font-size: 1.1em;
-    font-family: 'Courier New', Courier, monospace;
-
-    color: rgb(2, 2, 2);
-}
-
-a.nav:hover {
-    transition: all 0.3s;
-    text-decoration: underline;
-}
-*/
-/* sr-only hace referencia al menu principal que va a aparecer en pantalla para movil en forma de boton, esta clase es para no visualizar eso*/
-/*
-.sr-only {
-    position: absolute;
-    left: -4000px;
-    display: block;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-*/
-/* Sacamos el boton de navegación movil */
-/*
-.mobile-nav-toggle {
-    display: none;
-}
-*/
 /* main */
 
 main {
@@ -271,97 +189,16 @@ ion-icon {
 }
 
 
-
-@media screen and (max-width: 806px){
-
-    .logo {
-        width: auto;
-        height: 120px;
-    }
-
-    .logo:hover {
-        transform: none;
-    }
-
-    .navigation-nav {
-        flex-direction: column;
-    }
-
-
-}
-
 @media screen and (max-width: 690px) {
-
-   
-
-    .primary-header {
-        flex-direction: row;
-        gap: 0;
-    }
-
-    .ul-nav {
-        position: fixed;
-        z-index: 100;
-        inset: 0 0 0 40%; /* top right bottom left*/
-
-        background-color: #000000b9;
-
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        text-align: center;
-
-
-        transform: translateX(100%);
-        transition: transform 300ms ease-out;
-    }
-
-    .ul-nav[data-visible="true"] {
-        transform: translateX(0);
-        transition: transform 350ms ease-in;
-    }
-
-    a:link {
-        font-size: clamp(1.1em, 4vw, 1.6em);
-    }
-
-    .mobile-nav-toggle {
-        display: block;
-        position: absolute;
-        right: 2em;
-        top: 3em;
-        z-index: 101;
-
-        width: 2.4em;
-        height: 2.4em;
-        border: none;
-        background-color: transparent;
-        background-image: url('../img/menu_mobile.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    }
-
-    .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url('../img/menu_close.svg');
-    }
-
-    .logo {
-        width: auto;
-        height: 150px;
-    }
-
-    .logo:hover {
-        transform: none;
-    }
 
     .contenedor-zonas {
         grid-template-columns: 1fr;
     }
 
 
+
 }
+
 /*-----------------REGISTRO --------------------------*/
 
 svg {

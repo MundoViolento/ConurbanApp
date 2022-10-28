@@ -94,7 +94,7 @@
 /* ...................MEDIAS................. */
 
 /* Los ítems se ajustan al nav */
-@media (max-width: 1023px){
+@media (max-width: 1081px){
 
     .navbar{
         display: flex;
@@ -122,22 +122,17 @@
 }
 
 /* Desaparece el buscador */
-@media (max-width: 768px){
+@media (max-width: 690px){
     .buscadorNav{
         display: none !important;
     }
     .parteDerechaNavbar{
         padding-right: 50px;
     }
-
-    .navbar-toggler{
-        display: none;
-    }
-
 }
 
 /* Aparece el botón */
-@media (max-width: 425px) {
+@media (max-width: 992px) {
     .navbar{
         padding: 0;
     }
@@ -149,14 +144,13 @@
     .navbar-toggler{
         flex-direction: column;
         margin-right: 50px;
-        background-color: blue;
-        
     }
 
     .parteDerechaNavbar{
-        padding: 0;
+        margin-top: 230px;
         background-color: rgba(29, 14, 14, 0.788);
         width: 100%;
+        position: absolute;
     }
 
     .parteDerechaNavbar ul{
@@ -169,13 +163,14 @@
 }
 
 /* Desaparece el texto "ConurbanAPP" del logo */
-@media (max-width: 320px){
+@media (max-width: 419px){
     .logo{
+        margin: 4px;
         padding-right: 0px;
     }
 
     .logo img, .logo a{
-        height: 150px;
+        height: 80px;
         font-size: 0px;
     }
 }
