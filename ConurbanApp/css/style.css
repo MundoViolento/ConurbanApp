@@ -124,8 +124,6 @@ main {
 
 #barra-de-busqueda {
     display: flex;
-
-
     margin: 5em 0 2em 0;
 }
 
@@ -147,7 +145,7 @@ main {
 
 #btn-buscar {
     width: auto;
-    height: 4.8em;
+    /* height: 4.8em; */
     
     border-top: 2px solid black;
     border-bottom: 2px solid black;

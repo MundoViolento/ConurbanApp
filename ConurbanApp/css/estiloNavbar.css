@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Josefin+Sans:wght@300;600&family=Poiret+One&family=Satisfy&display=swap');
+
 *{
     font-size: 15px;
 }
@@ -17,6 +19,7 @@
 /* ...................PARTE IZQUIERDA (logo y nombre de la app) */
 .logo{
     padding: 0px 105px;
+    font-family: 'Poiret One', cursive;
 }
 
 .logo img{
@@ -91,19 +94,20 @@
 /* ...................MEDIAS................. */
 
 /* Los ítems se ajustan al nav */
-@media (max-width: 768px){
+@media (max-width: 1023px){
+
+    .navbar{
+        display: flex;
+        align-content: center;
+    }
+
     .logo{
         padding-right: 13px;
         padding-left: 50px;
-    }
-
-    .logo a img{
-        background-color: aqua;
-        size: 5px;
-    }
+    } 
 
     .inputBuscador{
-        text-align: end;
+        text-align: center;
     }
 
     .parteDerechaNavbar{
@@ -111,15 +115,29 @@
     }
 }
 
-/* Desaparece el buscador */
-@media (max-width: 425px){
-    .buscadorNav{
-        display: none !important;
+@media (max-width: 1162px){
+    .logo{
+        padding-left: 50px;
     }
 }
 
+/* Desaparece el buscador */
+@media (max-width: 768px){
+    .buscadorNav{
+        display: none !important;
+    }
+    .parteDerechaNavbar{
+        padding-right: 50px;
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+
+}
+
 /* Aparece el botón */
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .navbar{
         padding: 0;
     }
@@ -131,6 +149,8 @@
     .navbar-toggler{
         flex-direction: column;
         margin-right: 50px;
+        background-color: blue;
+        
     }
 
     .parteDerechaNavbar{
