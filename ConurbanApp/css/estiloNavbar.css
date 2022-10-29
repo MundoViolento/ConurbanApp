@@ -1,18 +1,15 @@
 body{
     padding-top: 150px;
 }
-
 header {
     font-size: 30px;
 }
-
 /* ESTILOS GENERALES */
 .navbar{
     top: 0;
     width: 100%;
     height: 150px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
     
@@ -22,127 +19,100 @@ header {
 .logo{
     padding: 0px 105px;
 }
-
 .logo img{
     width: auto;
     height: 150px;
 }
-
-
 /* ...................PARTE DERECHA (buscador, ítems, log in) */
 .parteDerechaNavbar{
     display: flex;
     padding-right: 100px;
 }
-
 /* BUSCADOR */
 .buscadorNav{
     background-color: white;
     border: 1px solid rgba(157, 157, 157, 0.466);
     border-radius: 30px;
-
     justify-content: flex-end;
 }
-
 .inputBuscador{
     width: 25vw;
     border: none;
     border-radius: 30px;
     text-align: center;
 }
-
 .inputBuscador:focus{
     border: none;
 }
-
 /* LOG IN */
 .contenedorLogin{
     align-self: center;
 }
-
 .login{
     color: white;
     background-color: black;
     border: 1px solid black;
-
     display: flex;
     justify-content: center;
-
     margin: 0px 10px;
     padding: 10px;
     border-radius: 15px;
-
     text-decoration: none;
     font-size: 25px;
 }
-
 .login:hover{
     color: rgb(211, 195, 175);
 }
-
-
 /* ...................MEDIAS................. */
-
 /* Los ítems se ajustan al nav */
 @media (max-width: 1657px){
     .logo{
         padding-right: 13px;
         padding-left: 50px;
     }
-
     .inputBuscador{
         text-align: end;
         padding: 0 50px;
     }
-
     .parteDerechaNavbar{
         padding-right: 20px;
     }
 }
-
 /* Desaparece el buscador */
 @media (max-width: 1524px){
     .buscadorNav{
         display: none !important;
     }
 }
-
 /* Aparece el botón */
 @media (max-width: 991px) {
     .navbar{
         padding: 0;
     }
-
     .logo{
         padding-left: 50px;
     }
-
     .navbar-toggler{
         flex-direction: column;
         margin-right: 50px;
     }
-
     .parteDerechaNavbar{
         padding: 0;
         background-color: rgba(29, 14, 14, 0.788);
         width: 100%;
     }
-
     .parteDerechaNavbar ul{
         align-items: center;
     }
-
     .parteDerechaNavbar a{
         color: antiquewhite !important;
     }
 }
-
 /* Desaparece el texto "ConurbanAPP" del logo */
 @media (max-width: 740px){
     .logo{
         padding-right: 0px;
     }
-
     .logo img, .logo a{
         height: 150px;
         font-size: 0px;

@@ -1,115 +1,90 @@
 main{
     display: flex;
- justify-content: center;
+    justify-content: center;
 }
-
 /*--------------------------------registro------------------------------------------------------------*/
 .main_registro{
-   
-    
     background-image: url(../img/fondo_registro.jpg);
     border: solid black;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
     height: 700px;
- 
 }
 .cuadro_registro{
-  
-   background-image: url(../img/fondo-blanco.png);
-   background-position: center;
-   background-size:contain;
-   padding: 0;
-   width: 50%;
-   height: 80%;
-   margin-top: 50px;
-   
+    background-image: url(../img/fondo-blanco.png);
+    background-position: center;
+    background-size: contain;
+    padding: 0;
+    width: 50%;
+    height: 80%;margin-top: 50px;
 }
-
-
 input{
     width: 300px;
     height: 30px;
     display: block;
     margin-bottom: 25px;
-   
 }
 .caja{
     display: inline;
     width: 15px;
-   align-items: center;
+    align-items: center;
 }
 .registro_inferior_boton{
     display: flex;
     justify-content: center;
-
 }
 .confirmar{
     width: 300px;
     color: blue;
     font-weight:bold;
- border-radius: 30px;
+    border-radius: 30px;
 }
-
 .registroSuperior{
     display: flex;
     justify-content: space-evenly;
 }
 /**---------------------------------------foter----------------------*/
 footer{
-
     border-top:double  red;
     background-color: rgb(184, 181, 181);
     display: block;
     margin: 0;
 }
- 
 footer ul,a,li {
     margin-bottom: 5px;
     text-align: center;
- 
     list-style: none;
- 
     color: black;
 }
- 
 footer p{
     border-bottom: solid black;
 }
- 
 .foot_sup {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
- 
     font-size: 50px;
 }
- 
 .redes{
     display: flex;
     flex-direction: row;
 }
- 
 .redes div{
     margin: 15px;
 }
- 
 ion-icon {
     width: 30px;
     height: 50px;
     
     color: rgb(26, 26, 29);
 }
- 
 .foot_inf {
     display: flex;
     justify-content: space-around;
 }
-
 .logo-foot {
-  
     border-radius: 50% ;
     width: 70px;
     height: 60px;
