@@ -85,6 +85,105 @@ main {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px
 }
+
+/*------------------------------------------- Contacto -------------------------------  */
+
+.contenedor-contacto {
+    font-family: 'Quicksand', sans-serif;
+
+    max-width: 1000px;
+    margin: auto;
+    padding: 1.5em;
+}
+
+.titulo-contacto {
+    text-align: center;
+    font-size: 2em;
+
+    color: white;
+}
+
+.contac {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.8);
+    background-color: #000000;
+    color: white;
+}
+
+.contac > * {
+    padding: 1em;
+}
+
+.form-contenedor form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-contenedor form .bloque {
+    grid-column: 1 / 3;
+}
+
+.form-contenedor form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.form-contenedor input,
+.form-contenedor textarea,
+.form-contenedor button {
+    width: 100%;
+    padding: 0.7em;
+
+    border: none;
+    outline: 0;
+    background: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.form-contenedor form button {
+    padding: 1em;
+    border: 0;
+    text-transform: uppercase;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.form-contenedor form button:hover,
+.form-contenedor form button:focus {
+    color: white;
+    background-color: rgba(255, 17, 0, 0.568);
+    
+    transition: background-color 1s ease-out;
+    cursor: pointer;
+}
+
+.contenedor-info {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.contenedor-info h3, 
+.contenedor-info ul,
+.contenedor-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contenedor-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor-info ul li {
+    padding: .3em;
+}
+
 @media screen and (max-width: 806px){
     .logo {
         width: auto;
@@ -95,6 +194,15 @@ main {
     }
     .navigation-nav {
         flex-direction: column;
+    }
+
+    .contac > * {
+        padding: 2em;
+    }
+
+    .contac {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 690px) {
