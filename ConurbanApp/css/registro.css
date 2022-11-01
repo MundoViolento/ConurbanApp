@@ -3,81 +3,65 @@ main{
     justify-content: center;
 }
 /**---------------MODO TABLET--------------------------------------*/
-
 @media screen and (min-width:320px){
     .main_registro{
         background-image: url(../img/fondo_registro.jpg);
-      
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0px;
         height: 100vh;
-        
     }
     .cuadro_registro{
         background-image: url(../img/fondo-blanco.png);
-       
         margin-top: 85px;
         height: 500px;
         width: 500px;
         flex-wrap: wrap;
         padding: 20px;
-       
-
-
-}
-.registro_movil{
-    padding: 30px;
-}
-.registro_movil p{
-    text-align: center;
-}
-.formulario_movil{
-    display: block;
-}
-form{
-    display: none;
-}
-input{
-    margin: 7px;
-    width: 300px;
-    
-}
-.boton_registrar_movil{
-    border-radius: 10px;
-    background:#1f53c5;
-    color: white;
-}
-
+    }
+    .registro_movil{
+        padding: 30px;
+    }
+    .registro_movil p{
+        text-align: center;
+    }
+    .formulario_movil{
+        display: block;
+    }
+    form{
+        display: none;
+    }
+    input{
+        margin: 7px;
+        width: 300px;
+    }
+    .boton_registrar_movil{
+        border-radius: 10px;
+        background:#1f53c5;
+        color: white;
+    }
 }
 .registro_movil{
     display: block;
 }
 /*-------------------------------------------TABLETA--------------------------------------------------------*/
 @media screen and (min-width:768px) {
-    
     .main_registro{
         background-image: url(../img/fondo_registro.jpg);
-      
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0px;
         height: 100vh;
         flex-wrap: wrap;
-        
     }
-    
     .cuadro_registro{
         background-image: url(../img/fondo-blanco.png);
-       margin: auto;
+        margin: auto;
         height: 500px;
         align-content: center;
         width: 700px;
         padding: 20px;
         flex-wrap: wrap;
-       
-        
-        
     }
     .registroSuperior{
         display: flex;
@@ -104,7 +88,6 @@ input{
         margin-top: 25px;
     }
     .caja_condiciones{
-        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -120,69 +103,60 @@ input{
     .registro_movil{
         display: none;
     }
-
-    }
-    /*----------------------------------FIN TABLET-----------------------------------------------*/
+}
+/*----------------------------------FIN TABLET-----------------------------------------------*/
 /*--------------------------------MONITOR------------------------------------------------------------*/
 @media screen and (min-width:1629px) {
-.main_registro{
-    background-image: url(../img/fondo_registro.jpg);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
-    height: 100vh;
-}
-.cuadro_registro{
-    background-image: url(../img/fondo-blanco.png);
-    background-position: center;
-    background-size: contain;
-    flex-wrap: nowrap;
-    width: 70%;
-    height: 70%;
-   margin: auto;
- 
-}
-input{
-    width: 400px;
-    height: 45px;
-    display: block;
-    
-    border-radius: 0;
-    
-}
-
-.registro_inferior_boton{
-    display: flex;
-    justify-content: center;
-}
-
-.caja{
-    width: 25px;
-    display: inline;
-    margin-top: 25px;
-}
-.caja_condiciones{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.confirmar{
-    width: 300px;
-    font-weight:bold;
-    border-radius: 30px;
-    background:#1f53c5;
-    color: white;
-}
-.registroSuperior{
-
-    display: flex;
-    justify-content: space-evenly;
-}
-.registro_movil{
-    display: none;
-}
+    .main_registro{
+        background-image: url(../img/fondo_registro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        height: 100vh;
+    }
+    .cuadro_registro{
+        background-image: url(../img/fondo-blanco.png);
+        background-position: center;
+        background-size: contain;
+        flex-wrap: nowrap;
+        width: 70%;
+        height: 70%;
+        margin: auto;
+    }
+    input{
+        width: 400px;
+        height: 45px;
+        display: block;
+        border-radius: 0;
+    }
+    .registro_inferior_boton{
+        display: flex;
+        justify-content: center;
+    }
+    .caja{
+        width: 25px;
+        display: inline;
+        margin-top: 25px;
+    }
+    .caja_condiciones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .confirmar{
+        width: 300px;
+        font-weight:bold;
+        border-radius: 30px;
+        background:#1f53c5;
+        color: white;
+    }
+    .registroSuperior{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .registro_movil{
+        display: none;
+    }
 }
 /**---------------------------------------foter----------------------*/
 /*footer{
@@ -230,6 +204,3 @@ ion-icon {
     height: 60px;
     overflow:hidden;
 }*/
-
-
-
