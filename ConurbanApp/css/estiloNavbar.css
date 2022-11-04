@@ -3,44 +3,39 @@
 *{
     font-size: 15px;
 }
-
-
+header {
+    font-size: 30px;
+}
 /* ESTILOS GENERALES */
 .navbar{
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
-    
+    z-index: 100;
 }
 /* ...................PARTE IZQUIERDA (logo y nombre de la app) */
 .logo{
     padding: 0px 105px;
     font-family: 'Poiret One', cursive;
 }
-
 .logo img{
     margin: 15px;
     width: auto;
     height: 80px;
 }
-
-
 /* ...................PARTE DERECHA (buscador, ítems, log in) */
 .parteDerechaNavbar{
     display: flex;
     padding-right: 100px;
 }
-
 /* BUSCADOR */
 .buscadorNav{
     background-color: white;
     border: 1px solid rgba(157, 157, 157, 0.466);
     border-radius: 30px;
-
     justify-content: flex-end;
 
     height: 40px;
@@ -53,46 +48,35 @@
     display: flex;
     border-radius: 0px 30px 30px 0;
 }
-
 .inputBuscador{
     width: 25vw;
     border: none;
     border-radius: 30px;
     text-align: center;
 }
-
 .inputBuscador:focus{
     border: none;
 }
-
 
 /* LOG IN */
 .contenedorLogin{
     align-self: center;
 }
-
 .login{
     color: white;
     background-color: black;
     border: 1px solid black;
-
     display: flex;
     justify-content: center;
-
     margin: 0px 10px;
     padding: 10px;
     border-radius: 15px;
-
     text-decoration: none;
 }
-
 .login:hover{
     color: rgba(255, 255, 255, 0.863);
 }
-
-
 /* ...................MEDIAS................. */
-
 /* Los ítems se ajustan al nav */
 @media (max-width: 1081px){
 
@@ -105,16 +89,13 @@
         padding-right: 13px;
         padding-left: 50px;
     } 
-
     .inputBuscador{
         text-align: center;
     }
-
     .parteDerechaNavbar{
         padding-right: 20px;
     }
 }
-
 @media (max-width: 1162px){
     .logo{
         padding-left: 50px;
@@ -136,39 +117,32 @@
     .navbar{
         padding: 0;
     }
-
     .logo{
         padding-left: 50px;
     }
-
     .navbar-toggler{
         flex-direction: column;
         margin-right: 50px;
     }
-
     .parteDerechaNavbar{
         margin-top: 230px;
         background-color: rgba(29, 14, 14, 0.788);
         width: 100%;
         position: absolute;
     }
-
     .parteDerechaNavbar ul{
         align-items: center;
     }
-
     .parteDerechaNavbar a{
         color: antiquewhite !important;
     }
 }
-
 /* Desaparece el texto "ConurbanAPP" del logo */
 @media (max-width: 419px){
     .logo{
         margin: 4px;
         padding-right: 0px;
     }
-
     .logo img, .logo a{
         height: 80px;
         font-size: 0px;

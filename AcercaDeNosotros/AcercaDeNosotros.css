@@ -10,7 +10,7 @@ h1{
 
 
 body{
-    background-image: linear-gradient(rgba(255, 0, 0, 0.466), rgba(67, 0, 253, 0.543));
+    background-image: linear-gradient(rgba(26, 44, 201, 0.644), rgba(194, 0, 253, 0.342));
     background-repeat: no-repeat;
     
     padding-bottom: 20px;
@@ -49,13 +49,13 @@ main{
 .misionVisionValores{
     margin: 90px 0;
     width: 90%;
-    height: 700px;
+    height: 50vh;
     padding: 0 10%;
 
     border: 1px solid black;
     border-radius: 20px;
     background-image: url(./bgimage.jpg);
-    background-size: 100%;
+    background-size: strech;
     background-repeat: no-repeat;
 
     display: flex;
@@ -86,10 +86,10 @@ main{
     background-image: url(./bgimage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
 
-.cardsValores :hover{
-    transform: scale(1.1);
+    padding: 20% 0;
+    height: 50vh;
+
 }
 
 /* SECCIÓN "Conocenos!" */
@@ -133,6 +133,9 @@ footer{
 /* ----------------------- MEDIA --------------------*/
 
 @media (max-width: 1439px){
+
+
+    /* CARDS NOSOTROS */
     .cardsNosotros{
 
         gap: 50px;
@@ -141,7 +144,6 @@ footer{
         grid-template-columns: 25vw 25vw 25vw;
 
     }
-
     .Emilia, .Tomas, .Lucas, .Saul, .Claudia{
         margin: 0;
         padding: 0;
