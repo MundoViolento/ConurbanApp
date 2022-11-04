@@ -130,6 +130,36 @@ footer{
     font-family: 'Satisfy', cursive;
 }
 
-@media (max-width: px){
+/* ----------------------- MEDIA --------------------*/
+
+@media (max-width: 1439px){
+    .cardsNosotros{
+
+        gap: 50px;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 25vw 25vw 25vw;
+
+    }
+
+    .Emilia, .Tomas, .Lucas, .Saul, .Claudia{
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 768px){
+
+    .conocenos{
+        margin: 0px;
+        padding: 0pc;
+    }
+    .cardsNosotros{
+        gap: 80px;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 25vw 25vw;
+    }
 
 }
