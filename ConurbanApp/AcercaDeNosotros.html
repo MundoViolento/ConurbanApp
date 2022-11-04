@@ -11,51 +11,13 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
     <!-- Hoja estilo Navbar-->
     <link rel="stylesheet" href="../ConurbanApp/css/estiloNavbar.css">
-
+    
     <!-- Hoja estilo AcercaDeNosotros -->
-    <link rel="stylesheet" href="../AcercaDeNosotros/AcercaDeNosotros.css">
+    <link rel="stylesheet" href="css/AcercaDeNosotros.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
-
-                <!-- LOGO: IMG + "ConurbanApp" -->
-                <div class="logo">
-                    <a class="navbar-brand" href="../ConurbanApp/index.html"><img src="../ConurbanApp/img/logo2.0.png" alt="">ConurbanApp</a>
-                </div>
-
-                    <!-- BUSCADOR -->
-                <form class="buscadorNav d-flex">
-                    <input class="inputBuscador" type="search" placeholder="¿Qué buscamos?" aria-label="Search">
-                    <button class="btn" type="submit"><ion-icon name="search-outline"></ion-icon></button>
-                </form>
-
-                <!-- BOTON COLLAPSE  -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="parteDerechaNavbar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <!-- ITEMS DEL NAV -->
-                        <ul class="menuDesplegable navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Barrios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Mapa</a>
-                            </li>
-                            
-                            <!-- Log In -->
-                            <li class="contenedorLogin nav-item">
-                                <a class="login nav-item" aria-current="page" href="../ConurbanApp/inicioSesion.html">Iniciar seción</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        </nav>
-        </nav>
-    </header>
+    <header class="header"></header>
 
     <main>
         <h1>Acerca de nosotros...</h1>
@@ -73,7 +35,7 @@
                     </div>
                 </div>
                 <div class="imgNosotros col-4">
-                    <img src="../ConurbanApp/img/logo2.0.png" class="img-fluid" alt="...">
+                    <img src="img/logo2.0.png" class="img-fluid" alt="...">
                 </div>
             </div>
         </div>
@@ -153,7 +115,7 @@
             <h4>Conocenos!</h4>
             <div class="cardsNosotros card-group">
                 <div class="Emilia card">
-                  <img src="../AcercaDeNosotros/fotoNosotros.png" class="card-img-top" alt="...">
+                  <img src="img/fotoNosotros.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Emilia Rodriguez</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -161,7 +123,7 @@
                 </div>
 
                 <div class="Tomas card">
-                  <img src="../AcercaDeNosotros/fotoNosotros.png" class="card-img-top" alt="...">
+                  <img src="img/fotoNosotros.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Tomas Godoy</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -169,7 +131,7 @@
                 </div>
 
                 <div class="Saul card">
-                  <img src="../AcercaDeNosotros/fotoNosotros.png" class="card-img-top" alt="...">
+                  <img src="img/fotoNosotros.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Saul </h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -177,7 +139,7 @@
                 </div>
 
                 <div class="Lucas card">
-                    <img src="../AcercaDeNosotros/fotoNosotros.png" class="card-img-top" alt="...">
+                    <img src="img/fotoNosotros.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Lucas Coca</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -185,7 +147,7 @@
                 </div>
 
                 <div class="Claudia card">
-                    <img src="../AcercaDeNosotros/fotoNosotros.png" class="card-img-top" alt="...">
+                    <img src="img/fotoNosotros.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Claudia Chauque</h5>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -196,10 +158,11 @@
 
     </main>
 
-    <footer style="text-align: center; color: white; font-size: 90px; padding-top: 50px;">
+    <footer class="pie-pagina">
         ConurbanApp
     </footer>
 
+    <script src="js/foot-nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -12,8 +12,6 @@ h1{
 body{
     background-image: linear-gradient(rgba(26, 44, 201, 0.644), rgba(194, 0, 253, 0.342));
     background-repeat: no-repeat;
-    
-    padding-bottom: 20px;
 }
 
 main{
@@ -54,7 +52,7 @@ main{
 
     border: 1px solid black;
     border-radius: 20px;
-    background-image: url(./bgimage.jpg);
+    background-image: url(../img/bgimage.jpg);
     background-size: strech;
     background-repeat: no-repeat;
 
@@ -117,17 +115,6 @@ main{
 }
 .Emilia h5, .Tomas h5, .Saul h5, .Lucas h5, .Claudia h5{
     text-align: center;
-}
-
-/* FOOTER */
-footer{
-    background-color: black;
-    width: 100%;
-    height: 250px;
-    margin-top: 90px;
-    margin-bottom: 0;
-
-    font-family: 'Satisfy', cursive;
 }
 
 /* ----------------------- MEDIA --------------------*/
