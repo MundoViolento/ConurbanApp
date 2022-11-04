@@ -23,7 +23,7 @@ main {
 
 
 /* TEXTO "Qué es y por qué nace ConurbanApp?" */
-.textoNosotros {
+.queEsConurbanApp {
     margin-top: 90px;
     padding: 20px;
     width: 90%;
@@ -33,7 +33,12 @@ main {
     text-align: justify;
 }
 
+.contenedorQueEsConurbanApp{
+    align-items: center;
+}
+
 .imgNosotros {
+    height: 20vw;
     display: flex;
     justify-content: center;
 }
