@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&family=Satisfy&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
 }
-h1{
+
+h1 {
     margin-top: 40px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
-body{
+body {
     background-image: linear-gradient(rgba(26, 44, 201, 0.644), rgba(194, 0, 253, 0.342));
     background-repeat: no-repeat;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,133 +22,115 @@ main{
 }
 
 
-
 /* TEXTO "Qué es y por qué nace ConurbanApp?" */
-.textoNosotros{
+.textoNosotros {
     margin-top: 90px;
-
     padding: 20px;
     width: 90%;
     height: auto;
-
     border: 1px solid rgb(124, 123, 123);
     border-radius: 20px;
-
     text-align: justify;
 }
 
-.imgNosotros{
+.imgNosotros {
     display: flex;
     justify-content: center;
 }
 
 /* MISIÓN, VISIÓN Y VALORES */
 /* Opción1 */
-.misionVisionValores{
+.misionVisionValores {
     margin: 90px 0;
     width: 90%;
     height: 50vh;
     padding: 0 10%;
-
     border: 1px solid black;
     border-radius: 20px;
     background-image: url(../img/bgimage.jpg);
     background-size: strech;
     background-repeat: no-repeat;
-
     display: flex;
     align-items: center;
-
     text-align: center;
 }
 
-.misionVisionValores .carousel-item h5{
+.misionVisionValores .carousel-item h5 {
     font-size: 2em;
 }
 
 /* Opción2 */
-.cardsValores{
+.cardsValores {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 90%;
-
     gap: 50px;
-    
     margin: 90px 0;
-
     text-align: center;
-
 }
 
-.cardMision, .cardValor, .cardVision{
+.cardMision, .cardValor, .cardVision {
     background-image: url(./bgimage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
     padding: 20% 0;
     height: 50vh;
-
 }
 
 /* SECCIÓN "Conocenos!" */
-.conocenos{
+.conocenos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.conocenos h4{
+.conocenos h4 {
     font-size: 3em;
 }
 
-.Emilia, .Tomas, .Saul, .Lucas, .Claudia{
+.Emilia, .Tomas, .Saul, .Lucas, .Claudia {
     width: 15em;
-
     background-color: transparent;
     color: aliceblue;
     border: none;
-
     text-align: justify;
-
     margin: 20px 90px;
 }
-.Emilia h5, .Tomas h5, .Saul h5, .Lucas h5, .Claudia h5{
+.Emilia h5, .Tomas h5, .Saul h5, .Lucas h5, .Claudia h5 {
     text-align: center;
 }
 
 /* ----------------------- MEDIA --------------------*/
 
 @media (max-width: 1439px){
-
-
+    
     /* CARDS NOSOTROS */
-    .cardsNosotros{
-
+    
+    .cardsNosotros {
         gap: 50px;
         display: grid;
         gap: 50px;
         grid-template-columns: 25vw 25vw 25vw;
-
     }
-    .Emilia, .Tomas, .Lucas, .Saul, .Claudia{
+    
+    .Emilia, .Tomas, .Lucas, .Saul, .Claudia {
         margin: 0;
         padding: 0;
-
     }
 }
 
 @media (max-width: 768px){
-
-    .conocenos{
+    
+    .conocenos {
         margin: 0px;
         padding: 0pc;
     }
-    .cardsNosotros{
+    
+    .cardsNosotros {
         gap: 80px;
         display: grid;
         gap: 50px;
         grid-template-columns: 25vw 25vw;
     }
-
 }
