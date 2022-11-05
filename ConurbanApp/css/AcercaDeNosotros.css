@@ -5,8 +5,9 @@
 }
 
 h1 {
-    margin-top: 40px;
+    margin-top: 50px;
     font-family: 'Josefin Sans', sans-serif;
+    
 }
 
 body {
@@ -19,6 +20,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 80px;
 }
 
 
@@ -65,7 +67,7 @@ main {
 }
 
 /* Opción2 */
-.cardsValores {
+.cardsMVV {
     display: grid;
     grid-template-columns: auto auto auto;
     width: 90%;
@@ -78,9 +80,17 @@ main {
     background-image: url(./bgimage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20% 0;
-    height: 50vh;
+    height: 40vh;
 }
+.cardMision .card-body,
+ .cardValor .card-body, 
+ .cardVision .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 
 /* SECCIÓN "Conocenos!" */
 .conocenos {
@@ -92,6 +102,7 @@ main {
 
 .conocenos h4 {
     font-size: 3em;
+    padding-bottom: 30px;
 }
 
 .Emilia, .Tomas, .Saul, .Lucas, .Claudia {
@@ -106,19 +117,41 @@ main {
     text-align: center;
 }
 
+footer{
+    margin-top: 100px;
+}
+
 /* ----------------------- MEDIA --------------------*/
 
 @media (max-width: 1439px){
-    
+    main{
+        padding: 0;
+    }
+
+    /* CARDS MVV */
+    .cardsMVV{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+    .cardMision, .cardVision, .cardValor{
+        height: auto;
+        align-items: center;
+        padding: 10px;
+    }
+
     /* CARDS NOSOTROS */
-    
+    .conocenos{
+        width: 90%;
+    }
+
     .cardsNosotros {
         gap: 50px;
         display: grid;
-        gap: 50px;
-        grid-template-columns: 25vw 25vw 25vw;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
     }
-    
+
     .Emilia, .Tomas, .Lucas, .Saul, .Claudia {
         margin: 0;
         padding: 0;
@@ -126,16 +159,17 @@ main {
 }
 
 @media (max-width: 768px){
-    
-    .conocenos {
-        margin: 0px;
-        padding: 0pc;
+    .contenedorQueEsConurbanApp{
+        justify-content: center;
     }
-    
+
     .cardsNosotros {
         gap: 80px;
         display: grid;
         gap: 50px;
-        grid-template-columns: 25vw 25vw;
+        grid-template-columns: 50% 50%;
+    }
+    .Emilia, .Tomas, .Lucas, .Saul, .Claudia {
+        font-size: 0.85em;
     }
 }
