@@ -37,6 +37,7 @@ main {
     display: flex;
     margin: 5em 0 2em 0;
 }
+
 #busqueda {
     width: 70vw;
     height: 4em;
@@ -52,7 +53,6 @@ main {
 
 #btn-buscar {
     width: auto;
-    /* height: 4em; */
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
@@ -80,6 +80,10 @@ main {
     width: 70vw;
     grid-gap: 2em;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedor-zonas a {
+    text-decoration: none;
 }
 
 .zona-particular {
