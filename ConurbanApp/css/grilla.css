@@ -63,6 +63,7 @@ body {
     width: 85%;
 
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 15px;
 
     background-image: url(../img/fondo-blanco.png);
@@ -72,7 +73,7 @@ body {
 
 #grilla div {
     margin: auto;
-    width: 70%;
+    width: 100%;
 }
 
 #grilla img {
@@ -107,47 +108,4 @@ body {
 
 .texto-img h1, h2 {
     font-size: clamp(1.4em, 2vw, 1.7em);
-}
-
-@media screen and (min-width: 600px) {
-    
-    #grilla {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: none;
-    }
-
-    #grilla div {
-        width: 90%;
-    }
-}
-
-@media screen and (min-width: 900px) {
-
-    /* html {
-        height:100%;
-    } */
-
-    #grilla {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: none;
-    }
-
-    #grilla div {
-        width: 90%;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-
-
-    #grilla {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: none;
-
-        padding: 0px;
-    }
-
-    #grilla div {
-        width: 90%;
-    }
 }
