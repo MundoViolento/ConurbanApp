@@ -14,7 +14,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-image: url(../img/pruebaBackGround.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
 }
 
 /* Navbar */
@@ -28,10 +31,26 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
+    margin-bottom: 8em;
 }
 
 /* Barra de busqueda. Hice "Id" porque vamos a usar estas clases solo en la barra principal*/
+
+.videoDeFondo{
+    background-image: url(../img/pruebaFondoBuscador.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    width: 100vw;
+    height: 90vh;
+    margin-bottom: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 #barra-de-busqueda {
     display: flex;
