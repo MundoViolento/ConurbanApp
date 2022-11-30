@@ -1,235 +1,185 @@
-main{
+main {
     display: flex;
     justify-content: center;
 }
 /**---------------MODO TABLET--------------------------------------*/
-
 @media screen and (min-width:320px){
-    .main_registro{
+    .main_registro {
         background-image: url(../img/fondo_registro.jpg);
-      
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0px;
         height: 100vh;
-        
     }
-    .cuadro_registro{
+
+    .cuadro_registro {
         background-image: url(../img/fondo-blanco.png);
-       
         margin-top: 85px;
         height: 500px;
         width: 500px;
         flex-wrap: wrap;
         padding: 20px;
-       
+    }
 
+    .registro_movil {
+        padding: 30px;
+    }
 
-}
-.registro_movil{
-    padding: 30px;
-}
-.registro_movil p{
-    text-align: center;
-}
-.formulario_movil{
-    display: block;
-}
-form{
-    display: none;
-}
-input{
-    margin: 7px;
-    width: 300px;
-    
-}
-.boton_registrar_movil{
-    border-radius: 10px;
-    background:#1f53c5;
-    color: white;
-}
+    .registro_movil p {
+        text-align: center;
+    }
 
+    .formulario_movil {
+        display: block;
+    }
+
+    form {
+        display: none;
+    }
+
+    input {
+        margin: 7px;
+        width: 300px;
+    }
+
+    .boton_registrar_movil {
+        border-radius: 10px;
+        background: #1f53c5;
+        color: white;
+    }
 }
 .registro_movil{
     display: block;
 }
 /*-------------------------------------------TABLETA--------------------------------------------------------*/
 @media screen and (min-width:768px) {
-    
-    .main_registro{
+    .main_registro {
         background-image: url(../img/fondo_registro.jpg);
-      
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0px;
         height: 100vh;
         flex-wrap: wrap;
-        
     }
-    
-    .cuadro_registro{
+
+    .cuadro_registro {
         background-image: url(../img/fondo-blanco.png);
-       margin: auto;
+        margin: auto;
         height: 500px;
         align-content: center;
         width: 700px;
         padding: 20px;
         flex-wrap: wrap;
-       
-        
-        
     }
-    .registroSuperior{
+
+    .registroSuperior {
         display: flex;
         justify-content: space-evenly;
     }
-    .registroSuperior p{
+
+    .registroSuperior p {
         text-align: center;
         text-decoration: none;
         margin-top: 50px;
     }
-    form{
+
+    form {
         display: block;
     }
-    input{
+
+    input {
         width: 250px;
         height: 30px;
         display: block;
-        margin:20px;
+        margin: 20px;
         border-radius: 20px;
     }
-    .caja{
+
+    .caja {
         width: 25px;
         display: inline;
         margin-top: 25px;
     }
-    .caja_condiciones{
-        
+
+    .caja_condiciones {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .confirmar{
-        background:#1f53c5;
+
+    .confirmar {
+        background: #1f53c5;
         color: white;
     }
-    .registro_inferior_boton{
+
+    .registro_inferior_boton {
         display: flex;
         justify-content: center;
     }
-    .registro_movil{
+
+    .registro_movil {
         display: none;
     }
-
-    }
-    /*----------------------------------FIN TABLET-----------------------------------------------*/
+}
+/*----------------------------------FIN TABLET-----------------------------------------------*/
 /*--------------------------------MONITOR------------------------------------------------------------*/
 @media screen and (min-width:1629px) {
-.main_registro{
-    background-image: url(../img/fondo_registro.jpg);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
-    height: 100vh;
-}
-.cuadro_registro{
-    background-image: url(../img/fondo-blanco.png);
-    background-position: center;
-    background-size: contain;
-    flex-wrap: nowrap;
-    width: 70%;
-    height: 70%;
-   margin: auto;
- 
-}
-input{
-    width: 400px;
-    height: 45px;
-    display: block;
-    
-    border-radius: 0;
-    
-}
+    .main_registro {
+        background-image: url(../img/fondo_registro.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        height: 100vh;
+    }
 
-.registro_inferior_boton{
-    display: flex;
-    justify-content: center;
-}
+    .cuadro_registro {
+        background-image: url(../img/fondo-blanco.png);
+        background-position: center;
+        background-size: contain;
+        flex-wrap: nowrap;
+        width: 70%;
+        height: 70%;
+        margin: auto;
+    }
 
-.caja{
-    width: 25px;
-    display: inline;
-    margin-top: 25px;
-}
-.caja_condiciones{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.confirmar{
-    width: 300px;
-    font-weight:bold;
-    border-radius: 30px;
-    background:#1f53c5;
-    color: white;
-}
-.registroSuperior{
+    input {
+        width: 400px;
+        height: 45px;
+        display: block;
+        border-radius: 0;
+    }
 
-    display: flex;
-    justify-content: space-evenly;
-}
-.registro_movil{
-    display: none;
-}
-}
-/**---------------------------------------foter----------------------*/
-/*footer{
-    border-top:double  red;
-    background-color: rgb(184, 181, 181);
-    display: block;
-    margin: 0;
-}
-footer ul,a,li {
-    margin-bottom: 5px;
-    text-align: center;
-    list-style: none;
-    color: black;
-}
-footer p{
-    border-bottom: solid black;
-}
-.foot_sup {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 50px;
-}
-.redes{
-    display: flex;
-    flex-direction: row;
-}
-.redes div{
-    margin: 15px;
-}
-ion-icon {
-    width: 30px;
-    height: 50px;
-    
-    color: rgb(26, 26, 29);
-}
-.foot_inf {
-    display: flex;
-    justify-content: space-around;
-}
-.logo-foot {
-    border-radius: 50% ;
-    width: 70px;
-    height: 60px;
-    overflow:hidden;
-}*/
+    .registro_inferior_boton {
+        display: flex;
+        justify-content: center;
+    }
 
+    .caja {
+        width: 25px;
+        display: inline;
+        margin-top: 25px;
+    }
 
+    .caja_condiciones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .confirmar {
+        width: 300px;
+        font-weight:bold;
+        border-radius: 30px;
+        background: #1f53c5;
+        color: white;
+    }
+
+    .registroSuperior {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .registro_movil {
+        display: none;
+    }
+}
