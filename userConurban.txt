@@ -1,0 +1,11 @@
+Mail
+User: appconurban@gmail.com
+Password: fundacionpescar
+
+Mongo Atlas incio sesión
+User: appconurban@gmail.com
+Password: conurbanapp
+
+Mongo Atlas base de datos
+User: capp
+Password: qHuRWDZ2tc7wgWGB
