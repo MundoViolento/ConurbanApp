@@ -1,0 +1,54 @@
+<head>
+    <title>ConurbanApp</title>
+</head>
+
+<body>
+    
+    {{> header}}
+
+    <main>
+
+        <section class="FondoBarraDeBusqueda capaNegra">
+            <h1>¡Bienvenido a ConurbanApp!</h1>
+            <label id="barra-de-busqueda">
+                <input id="busqueda" name="busqueda" type="text" placeholder="A dónde querés ir?">
+                <button id="btn-buscar" name="buscar" aria-label="buscar contenido"><i id="size-btn" class="fa-solid fa-magnifying-glass"></i></button>
+            </label>
+        </section>
+
+
+        <section id="zonas">
+            <h3>Conocé las opciones que tenemos para vos</h3><br><br>
+            <div class="contenedor-zonas">
+                <article id="conurbano" class="zona-particular">
+                    <img src="img/zonas.png" alt="">
+                    <h1>Recomendados</h1>
+                </article>
+
+                <article id="zona-norte" class="zona-particular">
+                    <a href="/card" class="estilo-boton">
+                        <img src="img/zona-norte.png" alt="">
+                        <h1>Zona Norte</h1>
+                    </a>
+                </article>
+
+                </article></a>
+                <article id="zona-sur" class="zona-particular">
+                    <a href="/zonaX">
+                    <img src="img/zona-sur.png" alt="">
+                    <h1>Zona Sur</h1>
+                    </a>
+                </article>
+                
+                <article id="zona-oeste" class="zona-particular">
+                    <img src="img/zona-oeste.png" alt="">
+                    <h1>Zona Oeste</h1>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    {{> footer}}
+
+</body>
+</html>

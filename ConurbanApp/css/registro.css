@@ -1,185 +1,144 @@
-main {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(/ConurbanApp/img/pexels-pixabay-280221.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,128,255, 0.5);
 }
-/**---------------MODO TABLET--------------------------------------*/
-@media screen and (min-width:320px){
-    .main_registro {
-        background-image: url(../img/fondo_registro.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0px;
-        height: 100vh;
-    }
-
-    .cuadro_registro {
-        background-image: url(../img/fondo-blanco.png);
-        margin-top: 85px;
-        height: 500px;
-        width: 500px;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-
-    .registro_movil {
-        padding: 30px;
-    }
-
-    .registro_movil p {
-        text-align: center;
-    }
-
-    .formulario_movil {
-        display: block;
-    }
-
-    form {
-        display: none;
-    }
-
-    input {
-        margin: 7px;
-        width: 300px;
-    }
-
-    .boton_registrar_movil {
-        border-radius: 10px;
-        background: #1f53c5;
-        color: white;
-    }
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
 }
-.registro_movil{
-    display: block;
+.caja__trasera div p,
+.caja__trasera div button{
+margin-top: 30px;
 }
-/*-------------------------------------------TABLETA--------------------------------------------------------*/
-@media screen and (min-width:768px) {
-    .main_registro {
-        background-image: url(../img/fondo_registro.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0px;
-        height: 100vh;
-        flex-wrap: wrap;
-    }
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
 
-    .cuadro_registro {
-        background-image: url(../img/fondo-blanco.png);
-        margin: auto;
-        height: 500px;
-        align-content: center;
-        width: 700px;
-        padding: 20px;
-        flex-wrap: wrap;
-    }
-
-    .registroSuperior {
+}
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+.caja__trasera button:hover{
+    background: #fff;
+    color:#46A2FD;
+}
+    /*----------formulario-------------------*/
+    .contenedor__login-register{
         display: flex;
-        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        max-width: 380px;
+        position: relative;
+        top: -185px;
+        left: 10px;
+        transition: left 500ms cubic-bezier(0.175,0.885,0.320,1.275);
+
     }
 
-    .registroSuperior p {
-        text-align: center;
-        text-decoration: none;
-        margin-top: 50px;
-    }
-
-    form {
-        display: block;
-    }
-
-    input {
-        width: 250px;
-        height: 30px;
-        display: block;
-        margin: 20px;
+    .contenedor__login-register form{
+        width: 100%;
+    padding: 80px 20px;
+    background: #fff;
         border-radius: 20px;
+        position: absolute;
+    }
+    .contenedor__login-register form h2{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #46A2FD;
     }
 
-    .caja {
-        width: 25px;
-        display: inline;
-        margin-top: 25px;
+    .contenedor__login-register form input{
+       width: 100%;
+       margin-top: 20px;
+       padding: 10px;
+       border: none;
+       background-color: #f2f2f2;
+       font-size: 16px;
+       outline: none;
     }
-
-    .caja_condiciones {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .confirmar {
-        background: #1f53c5;
+     .contenedor__login-register form button{
+        padding: 10px 40px;
+        margin-top: 40px;
+        border: none;
+        font-size: 14px;
+        background-color: #46A2FD;
         color: white;
-    }
-
-    .registro_inferior_boton {
-        display: flex;
-        justify-content: center;
-    }
-
-    .registro_movil {
-        display: none;
-    }
-}
-/*----------------------------------FIN TABLET-----------------------------------------------*/
-/*--------------------------------MONITOR------------------------------------------------------------*/
-@media screen and (min-width:1629px) {
-    .main_registro {
-        background-image: url(../img/fondo_registro.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0px;
-        height: 100vh;
-    }
-
-    .cuadro_registro {
-        background-image: url(../img/fondo-blanco.png);
-        background-position: center;
-        background-size: contain;
-        flex-wrap: nowrap;
-        width: 70%;
-        height: 70%;
-        margin: auto;
-    }
-
-    input {
-        width: 400px;
-        height: 45px;
+        cursor: pointer;
+        outline: none;
+     }
+     .formulario__login{
+        opacity: 1;
         display: block;
-        border-radius: 0;
-    }
-
-    .registro_inferior_boton {
-        display: flex;
-        justify-content: center;
-    }
-
-    .caja {
-        width: 25px;
-        display: inline;
-        margin-top: 25px;
-    }
-
-    .caja_condiciones {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .confirmar {
-        width: 300px;
-        font-weight:bold;
-        border-radius: 30px;
-        background: #1f53c5;
-        color: white;
-    }
-
-    .registroSuperior {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .registro_movil {
+     }
+     .formulario__register{
         display: none;
-    }
-}
+     }
+     /*----------------RESPONSIVE DISEÑO*-----------------*/
+     @media screen and (max-width: 850px){
+
+        main{
+            margin-top: 50px;
+        }
+        .caja__trasera{
+            max-width: 350px;
+            height: 300px;
+            flex-direction: column;
+            margin: auto;
+        }
+        .caja__trasera div{
+            margin: 0px;
+            position: absolute;
+        }
+        /*------------FORMULARIOS-----------*/
+
+        .contenedor__login-register{
+            top:-10px;
+            left:-5px;
+            margin: auto;
+
+        }
+        .contenedor__login-register form{
+            position: relative;
+        }
+     }
