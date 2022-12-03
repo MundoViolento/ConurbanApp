@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lugares</title>
+    <link rel="stylesheet" href="/css/grilla.css">
+</head>
+<body>
+
+    {{> header}}
+
+    <section id="textos">
+        <h2>Vamos a</h2> 
+        <h1>Zona Norte</h1>
+    </section>
+
+    <div id="barra-contenedor">
+        <div class="filtros">
+            <a href="">Localidades</a>
+            <a href="">Lugares</a>
+            <a href="">Eventos</a>
+            <a href="">Mejor Calificados</a>
+        </div>
+        <form class="buscadorNav d-flex">
+            <input class="inputBuscador" type="search" placeholder="¿Qué buscamos?" aria-label="Search">
+            <button class="iconoBuscar btn" type="submit"><ion-icon name="search-outline" class="iconoBuscar"></ion-icon></button>
+        </form>
+    </div>
+
+    <section id="grilla">
+        <div class="content-grilla">
+            <img src="img/parque-costa.jpg" alt="">
+            <div class="texto-img">
+                <h1>Parque De La Costa</h1>
+                <h2>TIGRE</h2>
+            </div>
+        </div>
+        <div class="content-grilla">
+            <img src="img/centro-roberto-de-vicenzo.jpg" alt="">
+            <div class="texto-img">
+                <h1>Centro Vicenso</h1>
+                <h2>Berazategui</h2>
+            </div>
+        </div>
+        <div class="content-grilla">
+            <img src="img/RioHudson.jpg" alt="">
+            <div class="texto-img">
+                <h1>RIO</h1>
+                <h2>Hudson</h2>
+            </div>
+        </div>
+        <div class="content-grilla">
+            <img src="img/RioHudson.jpg" alt="">
+            <div class="texto-img">
+                <h1>RIO</h1>
+                <h2>Hudson</h2>
+            </div>
+        </div>
+        <div class="content-grilla">
+            <img src="img/RioHudson.jpg" alt="">
+            <div class="texto-img">
+                <h1>RIO</h1>
+                <h2>Hudson</h2>
+            </div>
+        </div>
+
+    </section>
+
+    {{> footer}}
+
+</body>
+</html>

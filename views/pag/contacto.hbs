@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contactanos</title>
+</head>
+<body>
+
+    {{> header}}
+
+        <section class="contenedor-contacto">
+            <h1 class="titulo-contacto">Contáctanos</h1>
+
+            <div class="contac">
+                <div class="form-contenedor">
+                    <h2>Contacto</h2>
+                    <form action="">
+                        <p>
+                            <label>Nombre Completo
+                                <input type="text" id="nombre" name="nombre">
+                            </label>
+                        </p>
+                        <p>
+                            <label>Correo Electronico
+                                <input type="email" id="email" name="email" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label>Numero de telefono
+                                <input type="tel" id="tel" name="tel">
+                            </label>
+                        </p>
+                        <p>
+                            <label>Asunto
+                                <input type="text" id="asunto" name="asunto">
+                            </label>
+                        </p>
+                        <p class="bloque">
+                            <label>Mensaje
+                                <textarea name="mensaje" id="mensaje" cols="100" rows="3"></textarea>
+                            </label>
+                        </p>
+
+                        <button class="bloque">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="contenedor-info">
+                    <h3>Mas Información</h3>
+
+                    <ul>
+                        <li><i class="fas fa-phone"></i>011-3154-4443</li>
+                        <li><i class="fas fa-envelope-open-text"></i>ConurbanApp@gmail.com</li>
+                    </ul>
+
+                    <p><i>Gracias por su tiempo y por contactarnos. En ConurbanApp agradecemos sus opiniones.</i></p>
+                    <p><b>ConurbanApp.com</b></p>
+                </div>
+            </div>
+        </section>
+    
+        {{> footer}}
+
+</body>
+</html>
