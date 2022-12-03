@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #21D4FD;
+    background-image: linear-gradient(20deg, #21D4FD 0%, #B721FF 70%);
+}
+
+#textos {
+    margin: 30px;
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#textos h1 {
+    font-size: clamp(1.5em, 4vw, 3em);
+}
+
+#textos h2 {
+    font-size: clamp(1.1em, 3vw, 2em);
+}
+
+/* Buscador */
+#barra-contenedor {
+    margin: 0px auto 20px;
+    padding: 20px;
+    width: 90%;
+    height: 80px;
+
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+
+    border-radius: 20px;
+    background-color: #d6e5e9;
+}
+
+#barra-contenedor a{
+    text-decoration: none;
+    color: #111;
+}
+
+#barra-contenedor a:hover{
+    text-decoration: underline;
+    color: #111;
+}
+
+#barra-contenedor .filtros {
+    display: flex;
+    gap: 20px;
+
+    font-size: 1.5em;
+}
+
+#grilla {
+    margin: 0 auto 30px;
+    width: 85%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+
+    background-image: url(../img/fondo-blanco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#grilla div {
+    margin: auto;
+    width: 100%;
+}
+
+#grilla img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+    filter: blur(2px);
+}
+
+.content-grilla {
+    padding: 15px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    border-radius: 5px;
+}
+
+.texto-img {
+    position: absolute;
+    padding: 10px;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f1f1f1;
+    -webkit-text-stroke: 1px #111;
+}
+
+.texto-img h1, h2 {
+    font-size: clamp(1.4em, 2vw, 1.7em);
+}

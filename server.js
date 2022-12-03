@@ -1,68 +1,42 @@
 const express = require('express')
+const { engine } = require('express-handlebars')
 const mongoose = require('mongoose')
-require('dotenv').config()
+const session = require('express-session')
+const MongoStore = require('connect-mongo')
+const passport = require('passport')
 
 //Configuraciones
-const PORT = process.env.PORT
+require('dotenv').config()
 const app = express()
 
-app.get('/', (req, res) => {
-    res.send('Hola')
-})
+require('./config/passport')
 
-const Schema = mongoose.Schema
-
-const usuariosSchema = new Schema({
-        name: {
-            type: String,
-            require: true
-        },
-        lastName: {
-            type: String,
-            require: true
-        },
-        email: {
-            type: String,
-            require: true
-        },
-        password: {
-            type: String,
-            require: true
-        }
-    },
+app.engine('hbs', engine(
     {
-        versionKey: false,
-        timestamps: true
+        extname: '.hbs'
     }
-)
+))
+app.set('view engine', 'hbs')
 
-const usuariosModel = mongoose.model('usuarios', usuariosSchema)
+// Constantes
+const PORT = process.env.PORT
 
-const crearUsuario = (objUsuarios) => {
-    const usuarioNuevo = new usuariosModel(objUsuarios)
-    return usuarioNuevo
- }
+// Middleware
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
+app.use(express.static('public'))
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: true,
+    saveUninitialized: true,
+    store: MongoStore.create({ mongoUrl: process.env.URI_MONGO_REMOTA })
+}))
+app.use(passport.initialize())
+app.use(passport.session())
 
-app.get('/create', (req, res) => {
-
-    const obj = {
-        name: 'Tomas',
-        lastName: 'Godoy',
-        email: 'tomasgodoy@gmail.com',
-        password: 'ggg'
-    }
-
-    const instanciaModeloUsuario = crearUsuario(obj)
-
-    instanciaModeloUsuario.save( err => {
-        if (err) throw new Error(`Error en la escritura de la base de datos ${err}`)
-
-        console.log('Escritura OK')
-
-        res.send('Se creó bien!')
-    })
-
-})
+// Routes
+app.use('/', require('./routes/lugares.routes'))
+app.use('/auth', require('./routes/auth.routes'))
 
 
 const iniciar = async () => {
@@ -71,11 +45,11 @@ const iniciar = async () => {
         await mongoose.connect(process.env.URI_MONGO_REMOTA)
         console.log('Base de datos conectada')
         app.listen(PORT)
-        console.log(`Conectado al servidor`)
+        console.log(`Conectado al servidor ${PORT}`)
 
     } catch (error) {
         console.log('Algo paso', error)
     }
 }
 
-iniciar()
+iniciar() 
