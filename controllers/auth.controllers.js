@@ -40,13 +40,12 @@ const signup = async (req, res) => {
     }
 }
 const getFormSignin = (req, res) => {
-    res.render('auth/signin')
+    res.render('auth/signup')
 }
 const signin = passport.authenticate('local', {
     successRedirect: '/inicio',
-    failureRedirect: '/auth/signin'
+    failureRedirect: '/auth/signup'
 })
-
 
 const logout = async (req, res) => {
     
@@ -54,7 +53,7 @@ const logout = async (req, res) => {
 
         if (err) return next()
 
-        res.redirect('/auth/signin')
+        res.redirect('/auth/signup')
     })
 }
 
