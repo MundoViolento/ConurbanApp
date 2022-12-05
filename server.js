@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const passport = require('passport')
+const flash = require('connect-flash')
 
 //Configuraciones
 require('dotenv').config()
@@ -33,6 +34,14 @@ app.use(session({
 }))
 app.use(passport.initialize())
 app.use(passport.session())
+app.use(flash())
+
+// Variables globales
+app.use((req, res, next) => {
+    res.locals.bien = req.flash('bien')
+    res.locals.error = req.flash('error')
+    next()
+})
 
 // Routes
 app.use('/', require('./routes/lugares.routes'))

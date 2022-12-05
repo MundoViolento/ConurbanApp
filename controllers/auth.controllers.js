@@ -25,6 +25,7 @@ const signup = async (req, res) => {
         const userFound = await Auth.findOne( { email } )
 
         if ( userFound ){
+            req.flash('error', 'Ya se registro este mail')
             return res.redirect('/auth/signup')
         }
 
@@ -32,6 +33,7 @@ const signup = async (req, res) => {
         newUser.password = await newUser.passwordEncrypt(password)
 
         await newUser.save()
+        req.flash('bien', 'Se registro correctamente')
         res.redirect('/inicio')
 
 
