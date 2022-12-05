@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5vh;
+}
+
+.opciones{
+    height: 60.3vh;
+    width: 20%;
+    text-align: center;
+    background-color: rgba(63, 107, 251, 0.603);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FotoMiniatura{
+    display: flex;
+    height: 15vh;
+    width: 9vw;
+    /* background-color: aqua; */
+}
+
+.opciones button{
+    border: none;
+    background-color: transparent;
+    padding: 1.5vh;
+}
+
+.opciones button:hover{
+    text-decoration: black underline 1px;
+}
+
+.EditarPerfil h3{
+    text-align: center;
+    font-size: 2em;
+    padding: 2vh;
+}
+
+#bodyOpcion{
+    width: 70%;
+    height: 60.3vh;
+    /* border: black solid 1px; */
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    background-color: rgba(63, 107, 251, 0.427);
+}
+
+.campos label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FotoDePerfil{
+    background-color: rgba(255, 255, 255, 0.253);
+    padding: 3vh 0;
+    margin-bottom: 2vh;
+}
+
+.campos label i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgba(0, 0, 0, 0.342) 1px;
+    width: 24vw;
+    height: 25vh;
+    position:relative;
+    margin-bottom: 2vh;
+}
+
+.campos .col input{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid rgb(0, 0, 0) 1px;
+}
+
+.desaparecer{
+    display: none;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/estiloNavbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6f349d0ef8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/perfilUsuario.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <header class="header"></header>
+
+    <main>
+        <section class="opciones btn-group-vertical col-4">
+            <div class="FotoMiniatura"><img src="" alt=""></div> 
+            <ul>
+                <li><button class="EditarPerfil"> Editar perfil </button></li>
+                <li><button class="TusComentarios"> Tus comentarios </button></li>
+                <li><button class="Favoritos"> Favoritos </button></li>
+                <li><button class="Configuracion"> Configuración </button></li>
+                <li><button class="Cuenta"> Cuenta </button></li>
+            </ul>
+        </section>
+
+
+        <section id="bodyOpcion" class="col">
+            <article class="EditarPerfil">
+                    <h3>Perfil</h3>
+                    <div class="campos row">
+                        <label class="FotoDePerfil">Foto de perfil: <i class="fa-solid fa-camera"></i><input type="file"></label>
+                        <label class="col">Nombre: <input type="text"></label>
+                        <label class="col">Apellido: <input type="text"></label>
+                    </div>
+            </article>
+            <article class="TusComentarios desaparecer">
+                <h3>Tus comentarios</h3>
+            </article>
+            <article class="Favoritos desaparecer">
+                <h3>Favoritos</h3>
+            </article>
+            <article class="Configuracion desaparecer">
+                <h3>Configuración</h3>
+                <label>Cambiar Contraseña</label>
+                <label>Cambiar </label>
+            </article>
+            <article class="Cuenta desaparecer">
+                <h3>Cuenta</h3>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="pie-pagina"></footer>
+    <script src="js/foot-nav.js"></script>
+</body>
+</html>
