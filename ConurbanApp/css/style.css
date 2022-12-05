@@ -13,11 +13,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #21D4FD;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.822), rgba(255, 255, 0, 0.486));
-    /* background-image: url(../img/fondo-blanco.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../img//bgMainIndex.jpeg);
+    background-size:cover;
 }
 
 /* Navbar */
@@ -32,13 +29,13 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 8em; */
+    background-color: rgba(0, 128, 255, 0.312);
 }
 
 /* Barra de busqueda. Hice "Id" porque vamos a usar estas clases solo en la barra principal*/
 .FondoBarraDeBusqueda{
+    background-image: url(../img/pruebaFondoBuscador.jpeg);
     background-image: url(../img/Proyecto_2.gif);
-    /* background-color: rgba(0, 0, 0, 0.423); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -47,7 +44,6 @@ main {
 
     width: 100vw;
     height: 97vh;
-    /* margin-bottom: 10vh; */
 
     display: flex;
     flex-direction: column;
@@ -99,9 +95,9 @@ main {
     text-align: center;
     flex-direction: column;
     /* background-color: rgba(0, 0, 0, 0.205); */
-    padding: 6em 0  15em 0 ;
-    /* padding-top: 8em;
-    padding-bottom: 20em; */
+    padding: 4em 0  15em 0 ;
+    border-top: rgba(5, 48, 91, 0.5) double 12px;
+
 }
 
 .contenedor-zonas {
@@ -118,7 +114,9 @@ main {
 #zonas h3{
     font-size: 2vw;
     padding-top: 20px;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
 }
 
 .zona-particular {
@@ -363,6 +361,8 @@ svg {
 
 .fondo-transparente {
     background-image: url(../img/fondo-blanco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     justify-content: center;
 }
