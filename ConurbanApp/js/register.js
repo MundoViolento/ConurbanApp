@@ -1,5 +1,6 @@
 document.getElementById("btn__iniciar-sesion").addEventListener("click",inisiarSesion)
 document.getElementById("btn__registrarse").addEventListener("click",register)
+document.getElementById("yaRegistrado").addEventListener("click",funcion)
 window.addEventListener("resize",anchoPagina);
 // declaracion de variables
 var contenedor_login_register=document.querySelector(".contenedor__login-register");
@@ -56,4 +57,7 @@ function register(){
     caja_trasera_login.style.display="block";
     caja_trasera_login.style.opacity="1";}
 
+}
+function funcion (){
+    window.location="index.html"
 }
