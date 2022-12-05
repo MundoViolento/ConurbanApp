@@ -26,11 +26,27 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Mapa</a>
                     </li>
-                        
+                    {{#if user}}
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver mi perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="btn btn-danger w-100" href="/auth/logout">Salir</a></li>
+                        </ul>
+                    </div>
+                    {{else}}
+                    
                     <!-- Log In -->
                     <li class="contenedorLogin nav-item">
                         <a class="login nav-item" aria-current="page" href="/auth/signin">Iniciar sesión</a>
                     </li>
+                        <li class="contenedorLogin nav-item">
+                        <a class="login nav-item" aria-current="page" href="/auth/signin">Registrarse</a>
+                    </li>
+                    {{/if}}
                 </ul>
             </div>
         </div>
