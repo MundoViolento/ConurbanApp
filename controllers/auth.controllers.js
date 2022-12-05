@@ -11,11 +11,11 @@ const signup = async (req, res) => {
         const {name, email, password, confirm_password} = req.body
 
         if ( password !== confirm_password) {
-            errors.push({msg: 'La contraseña no coincide'})
+            errors.push({msg: 'La contraseña no coincide.'})
         }
 
         if ( password.length < 4) {
-            errors.push({msg: 'La contraseña debe tener almenos 4 caracteres'})
+            errors.push({msg: 'La contraseña debe tener almenos 4 caracteres.'})
         }
 
         if ( errors.length > 0) {
@@ -29,7 +29,7 @@ const signup = async (req, res) => {
         const userFound = await Auth.findOne( { email } )
 
         if ( userFound ){
-            req.flash('error_msg', 'Ya se registro este mail')
+            req.flash('error_msg', 'Ya se registro este mail.')
             return res.redirect('/auth/signup')
         }
 
@@ -50,7 +50,8 @@ const getFormSignin = (req, res) => {
 }
 const signin = passport.authenticate('local', {
     successRedirect: '/inicio',
-    failureRedirect: '/auth/signup'
+    failureRedirect: '/auth/signup',
+    failureFlash: true
 })
 
 const logout = async (req, res) => {
@@ -58,7 +59,7 @@ const logout = async (req, res) => {
     await req.logout(err => {
 
         if (err) return next()
-
+        req.flash('success_msg', 'Sesión cerrada con exito!')
         res.redirect('/auth/signup')
     })
 }
