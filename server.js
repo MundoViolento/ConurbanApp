@@ -1,10 +1,10 @@
 const express = require('express')
 const { engine } = require('express-handlebars')
 const mongoose = require('mongoose')
-const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const passport = require('passport')
 const flash = require('connect-flash')
+const session = require('express-session')
 
 //Configuraciones
 require('dotenv').config()
@@ -38,8 +38,8 @@ app.use(flash())
 
 // Variables globales
 app.use((req, res, next) => {
-    res.locals.bien = req.flash('bien')
-    res.locals.error = req.flash('error')
+    res.locals.succes_msg = req.flash('succes_msg')
+    res.locals.error_msg = req.flash('error_msg')
     next()
 })
 

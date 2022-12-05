@@ -19,13 +19,17 @@ const signup = async (req, res) => {
         }
 
         if ( errors.length > 0) {
-            return res.send('Hay errores')
+            res.render('auth/signup', {
+                errors,
+                name,
+                email
+            })
         }
 
         const userFound = await Auth.findOne( { email } )
 
         if ( userFound ){
-            req.flash('error', 'Ya se registro este mail')
+            req.flash('error_msg', 'Ya se registro este mail')
             return res.redirect('/auth/signup')
         }
 
@@ -33,7 +37,7 @@ const signup = async (req, res) => {
         newUser.password = await newUser.passwordEncrypt(password)
 
         await newUser.save()
-        req.flash('bien', 'Se registro correctamente')
+        req.flash('success_msg', '¡Felicitaciones se registro correctamente!')
         res.redirect('/inicio')
 
 
