@@ -37,8 +37,8 @@ const signup = async (req, res) => {
         newUser.password = await newUser.passwordEncrypt(password)
 
         await newUser.save()
-        req.flash('success_msg', '¡Felicitaciones se registro correctamente!')
-        res.redirect('/inicio')
+        req.flash('success_msg', '¡Felicitaciones se registro correctamente, ahora inicie sesión y disfrute!')
+        res.redirect('/auth/signup')
 
 
     } catch (error) {
