@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/perfilUsuario.css">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    
+    {{> header}}
+
+    <main>
+        <section class="opciones btn-group-vertical col-4">
+            <div class="FotoMiniatura"><img src="" alt=""></div> 
+            <ul>
+                <li><button class="boton_perfil"> Editar perfil </button></li>
+                <li><button class="boton_comentarios"> Tus comentarios </button></li>
+                <li><button class="boton_favoritos"> Favoritos </button></li>
+                <li><button class="boton_configuracion"> Configuración </button></li>
+            </ul>
+        </section>
+
+        <section id="bodyOpcion" class="col">
+            <article class="EditarPerfil desaparecer">
+                <h3>Perfil</h3>
+                <div class="campos row">
+                    <label class="FotoDePerfil">Foto de perfil: <i class="fa-solid fa-camera"></i><input type="file"></label>
+                    <label class="col">Nombre: <input type="text"></label>
+                    <label class="col">Apellido: <input type="text"></label>
+                </div>
+            </article>
+            <article class="TusComentarios">
+                <h3>Tus comentarios</h3>
+                <ul class="listaComentarios list-group list-group-flush">
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                    <li class="list-group-item"><img src="/img/comentario.png" alt=""></li>
+                </ul>
+            </article>
+            <article class="Favoritos desaparecer">
+                <h3>Favoritos</h3>
+                <div class="conenedorCardsFavoritos">
+                    <div class="card">
+                        <img src="/img/bgimage.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div><div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div><div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div><div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div><div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div><div class="card">
+                        <img src="/img/parque-costa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="Configuracion desaparecer">
+                <h3>Configuración</h3>
+                <div class="desplegable accordion accordion-flush row" id="accordionFlushExample">
+                    <div class="accordion-item col cambiarPassword">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Cambiar contraseña
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><label>Contraseña actual: <input type="password"></label>
+                            <label>Nueva contraseña: <input type="password"></label>
+                            <button class="btnEnviar">Enviar</button>    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item col">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Cuenta
+                        </button>
+                      </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <button class="btnEliminarCuenta">Eliminar cuenta</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item col">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Adicional
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quaerat. Odio repellendus est quia, cupiditate perspiciatis assumenda minima numquam sed cumque consectetur nobis excepturi recusandae, culpa sit eum aut amet.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    {{> footer}}
+
+    <script src="/js/desaparecer.js"></script>
+</body>
+</html>

@@ -2,6 +2,10 @@ const getInicio = (req, res) => {
     res.render('index')
 }
 
+const getPerfil = (req, res) => {
+    res.render('pag/perfilUsuario')
+}
+
 const getContacto = (req, res) => {
     res.render('pag/contacto')
 }
@@ -28,6 +32,7 @@ const getZonaRecomendados = (req, res) => {
 
 module.exports = {
     getInicio,
+    getPerfil,
     getContacto,
     getNosotros,
     getZonaNorte,

@@ -17,7 +17,9 @@
                     <img class="card-img-top" src="img/558_979.jpg" alt="Card parque de la costa">
                     <div class="card-body">
                         <h5 class="card-title">Parque de La Costa</h5>
+                        {{#if user}}
                         {{> estrellas}}
+                        {{/if}}
                         <p class="card-text">El Parque de la Costa es un parque de atracciones ubicado en la ciudad de Tigre, Provincia de Buenos Aires, Argentina. Es uno de los más importantes del país. Está ubicado sobre un predio de catorce hectáreas que se encuentra entre los ríos Luján y Tigre.</p>
                         <button type="button" class="btn btn-outline-primary estilo-boton" role="button"><a href="https://www.parquedelacosta.com.ar/">Ir al sitio</a></button>
                     </div>

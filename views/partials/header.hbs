@@ -28,13 +28,13 @@
                     </li>
                     {{#if user}}
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Opciones
+                        <button class="btn btn-secondary dropdown-toggle ms-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Ver mi perfil</a></li>
+                            <li><a class="dropdown-item" href="/Mi-Perfil">Ver mi perfil</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="btn btn-danger w-100" href="/auth/logout">Salir</a></li>
+                            <li><a class="btn btn-danger w-100" href="/auth/logout"><i class="fa-solid fa-right-from-bracket"></i>Salir</a></li>
                         </ul>
                     </div>
                     {{else}}
