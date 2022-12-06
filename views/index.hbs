@@ -7,8 +7,7 @@
     {{> header}}
 
     <main id="index-main">
-
-        <section class="FondoBarraDeBusqueda capaNegra">
+        <section class="FondoBarraDeBusqueda">
             <h1>¡Bienvenido a ConurbanApp!</h1>
             <label id="barra-de-busqueda">
                 <input id="busqueda" name="busqueda" type="text" placeholder="A dónde querés ir?">
@@ -21,8 +20,10 @@
             <h3>Conocé las opciones que tenemos para vos</h3><br><br>
             <div class="contenedor-zonas">
                 <article id="conurbano" class="zona-particular">
-                    <img src="img/zonas.png" alt="">
-                    <h1>Recomendados</h1>
+                    <a href="/card">
+                        <img src="img/zonas.png" alt="">
+                        <h1>Recomendados</h1>
+                    </a>
                 </article>
 
                 <article id="zona-norte" class="zona-particular">
@@ -32,17 +33,18 @@
                     </a>
                 </article>
 
-                </article></a>
                 <article id="zona-sur" class="zona-particular">
-                    <a href="/zonaX">
+                    <a href="/card">
                     <img src="img/zona-sur.png" alt="">
                     <h1>Zona Sur</h1>
                     </a>
                 </article>
                 
                 <article id="zona-oeste" class="zona-particular">
-                    <img src="img/zona-oeste.png" alt="">
-                    <h1>Zona Oeste</h1>
+                    <a href="/card">
+                        <img src="img/zona-oeste.png" alt="">
+                        <h1>Zona Oeste</h1>
+                    </a>
                 </article>
             </div>
         </section>
