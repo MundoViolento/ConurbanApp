@@ -69,8 +69,8 @@ main {
 /* Opción2 */
 .cardsMVV {
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 90%;
+    grid-template-columns: auto auto;
+    width: 70%;
     gap: 50px;
     margin: 90px 0;
     text-align: center;
