@@ -10,18 +10,28 @@ const getNosotros = (req, res) => {
     res.render('pag/AcercaDeNosotros')
 }
 
-const getZonaX = (req, res) => {
-    res.render('pag/zonaX')
+const getZonaNorte = (req, res) =>{
+    res.render('pag/zonaNorte')
 }
 
-const getCard = (req, res) => {
-    res.render('pag/cardZN')
+const getZonaSur = (req, res) =>{
+    res.render('pag/zonaSur')
+}
+
+const getZonaOeste = (req, res) =>{
+    res.render('pag/zonaOeste')
+}
+
+const getZonaRecomendados = (req, res) => {
+    res.render('pag/recomendados')
 }
 
 module.exports = {
     getInicio,
     getContacto,
     getNosotros,
-    getZonaX,
-    getCard
+    getZonaNorte,
+    getZonaSur,
+    getZonaOeste,
+    getZonaRecomendados
 }
