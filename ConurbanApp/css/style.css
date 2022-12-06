@@ -130,6 +130,15 @@ main {
     cursor: pointer;
 }
 
+.zona-particular > a {
+    color: #111;
+    font-size: 20px;
+}
+
+.zona-particular > a:active {
+    color: #111;
+}
+
 .zona-particular > h1 {
     color: rgb(0, 0, 0);
     font-size: clamp(1.3em, 2.5vw, 3em);
