@@ -66,6 +66,19 @@ main {
     font-size: 2em;
 }
 
+.textoCarousel {
+font-size: 1.5em;
+}
+
+.rounded-img{
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 20em;
+  height: 20em;
+  margin: 2em;
+  max-width: 100%;
+}
+
 /* Opción2 */
 .cardsMVV {
     display: grid;
