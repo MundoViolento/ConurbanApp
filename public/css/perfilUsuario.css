@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5vh 10vw;  
+}
+
+.desaparecer{
+    display: none !important;
+}
+
+/* -----------------------------ESTILOS GENERALES----------------------------- */
+.opciones{
+    padding-right: 2vw;
+    height: 60.3vh;
+    width: 20%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid rgba(255, 255, 255, 0.281) 1px;
+    border-radius: 20px 0 0 20px;
+}
+
+.opciones button{
+    border: none;
+    background-color: transparent;
+    padding: 1.5vh;
+}
+
+.opciones button:hover{
+    text-decoration: rgba(255, 255, 255, 0.486) underline 1.3px;
+}
+
+#bodyOpcion{
+    width: 70%;
+    height: 60.3vh;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+/* -----------------------------EDITAR PERFIL -----------------------------*/
+.EditarPerfil h3{
+    text-align: center;
+    font-size: 2em;
+    padding: 2vh;
+}
+
+.campos label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FotoDePerfil{
+    background-color: rgba(255, 255, 255, 0.253);
+    padding: 3vh 0;
+    margin-bottom: 2vh;
+}
+
+.campos label i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgba(0, 0, 0, 0.342) 1px;
+    width: 24vw;
+    height: 25vh;
+    position:relative;
+    margin-bottom: 2vh;
+}
+
+.campos .col input{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid rgb(0, 0, 0) 1px;
+}
+
+/* -----------------------------TUS COMENTARIOS -----------------------------*/
+.TusComentarios{
+    width: 90%;
+    padding: 12vh 0;
+}
+
+.TusComentarios h3{
+    margin-bottom: 2vh;
+}
+
+.TusComentarios ul li{
+    background-color: rgba(255, 255, 255, 0.507);
+}
+
+.listaComentarios{
+    height: 30vh;
+    overflow-y: auto;
+}
+
+.listaComentarios::-webkit-scrollbar{
+    width: 7px;
+}
+.listaComentarios::-webkit-scrollbar-thumb{
+    background-color: rgba(47, 0, 255, 0.753);
+    border-radius: 20px;
+}
+
+/* -----------------------------FAVORITOS-----------------------------*/
+.Favoritos{
+    width: 90%;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Favoritos h3{
+    margin-bottom: 3vh;
+}
+.Favoritos .conenedorCardsFavoritos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 3vh 1.2vw;
+
+    width: 100%;
+
+    overflow-y: auto;
+}
+
+.Favoritos .conenedorCardsFavoritos p{
+    font-size: 0.7em;
+}
+
+.conenedorCardsFavoritos .card{
+    background-color: transparent;
+    margin: 0 2vw;
+}
+
+/* -----------------------------CONFIGURACIÓN-----------------------------*/
+.Configuracion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 2vh 1vw;
+}
+.Configuracion h3{
+    align-self: flex-start;
+    margin-bottom: 5vh;
+}
+
+.cambiarPassword{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.cambiarPassword label{
+    padding: 0 0 1.5vh 0;
+}
+.cambiarPassword label input{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+.desplegable{
+    width: 100%;
+    background-color: transparent;
+}
+
+.desplegable div{
+    background-color: transparent;
+    margin: 0 1.2vw;
+    border: none;
+}
+.desplegable .accordion-item h2 .accordion-button{
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.btnEnviar{
+    color: black;
+    padding: 0.2vh 1vw;
+    border: none;
+    border-radius: 3px;
+}
+.btnEnviar:hover{
+    background-color: white;
+}
+
+.btnEliminarCuenta{
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    width: 6vw;
+    margin: 5% 20%;
+}
+.btnEliminarCuenta:hover{
+    color: rgba(0, 0, 0, 0.685);
+}

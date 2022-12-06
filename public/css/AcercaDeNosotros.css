@@ -66,11 +66,24 @@ main {
     font-size: 2em;
 }
 
+.textoCarousel {
+font-size: 1.5em;
+}
+
+.rounded-img{
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 20em;
+  height: 20em;
+  margin: 2em;
+  max-width: 100%;
+}
+
 /* Opción2 */
 .cardsMVV {
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: 90%;
+    grid-template-columns: auto auto;
+    width: 70%;
     gap: 50px;
     margin: 90px 0;
     text-align: center;
@@ -82,6 +95,7 @@ main {
     background-repeat: no-repeat;
     height: 40vh;
 }
+
 .cardMision .card-body,
  .cardValor .card-body, 
  .cardVision .card-body{
@@ -90,7 +104,6 @@ main {
     justify-content: center;
 
 }
-
 
 /* SECCIÓN "Conocenos!" */
 .conocenos {
@@ -105,7 +118,7 @@ main {
     padding-bottom: 30px;
 }
 
-.Emilia, .Tomas, .Saul, .Lucas, .Claudia {
+.Emilia, .Tomas, .Saul, .Claudia {
     width: 15em;
     background-color: transparent;
     color: aliceblue;
@@ -113,8 +126,12 @@ main {
     text-align: justify;
     margin: 20px 90px;
 }
-.Emilia h5, .Tomas h5, .Saul h5, .Lucas h5, .Claudia h5 {
+.Emilia h5, .Tomas h5, .Saul h5, .Claudia h5 {
     text-align: center;
+}
+
+.card i {
+    font-size: 40px;
 }
 
 footer{

@@ -6,7 +6,7 @@
     font-family: sans-serif;
 }
 body{
-    background-image: url(/img/pexels-pixabay-280221.jpg);
+    background-image: url(/ConurbanApp/img/pexels-pixabay-280221.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -106,11 +106,6 @@ margin-top: 30px;
         color: white;
         cursor: pointer;
         outline: none;
-     }
-     .contenedor__login-register form button a{
-        font-size: 14px;
-        color: white;
-        text-decoration: none;
      }
      .formulario__login{
         opacity: 1;
