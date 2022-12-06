@@ -107,6 +107,11 @@ margin-top: 30px;
         cursor: pointer;
         outline: none;
      }
+     .contenedor__login-register form button a{
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+     }
      .formulario__login{
         opacity: 1;
         display: block;
