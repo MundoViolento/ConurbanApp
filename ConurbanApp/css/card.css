@@ -27,7 +27,7 @@ body{
     margin: 10px;
     max-width:380px;
     min-width: 300px;
-    height: 470px;
+    height: 550px;
 }
 
 .card:hover {
@@ -37,7 +37,7 @@ body{
 }
 
 .card-body{
-    background: #e87df8a9;
+    background: #f3ebf5a9;
     overflow: hidden;
     padding-bottom:10px;
 }
@@ -54,3 +54,51 @@ main{
     flex-direction: column;
     justify-content: center;
 }
+
+#form {
+    width: 50px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  #form p {
+    text-align: center;
+   
+    
+
+  }
+  .hola{
+    display: flex;
+    justify-content:flex-start ;
+  }
+  
+  #form label {
+    font-size: 20px;
+    
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+    font-size:35px;
+  
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
